@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    "copper_additions:copper_pickaxe",
+    "copper_additions:copper_shovel",
+    "copper_additions:copper_axe",
+    "copper_additions:copper_hoe",
+    "copper_additions:copper_sword",
+    "copper_additions:copper_helmet",
+    "copper_additions:copper_chestplate",
+    "copper_additions:copper_leggings",
+    "copper_additions:copper_boots",
+    "copper_additions:copper_horse_armor"
+  ],
+  "result": {
+    "count": 1,
+    "id": "copper_additions:copper_nugget"
+  }
+}

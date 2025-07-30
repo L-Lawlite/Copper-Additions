@@ -9,6 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class CopperAdditionsTags {
+
     public static class Blocks {
         private static TagKey<Block> copperAdditionsTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(CopperAdditions.MODID, name));

@@ -2,8 +2,13 @@ package net.lawliet.copper_additions.datagen;
 
 import com.mojang.logging.LogUtils;
 import net.lawliet.copper_additions.CopperAdditions;
+import net.lawliet.copper_additions.datagen.lang.LanguageGenerator;
+import net.lawliet.copper_additions.datagen.lootTables.CopperAdditionsGlobalLootModifier;
 import net.lawliet.copper_additions.datagen.model.EquipmentRenderGenerator;
 import net.lawliet.copper_additions.datagen.model.ModelGenerator;
+import net.lawliet.copper_additions.datagen.recipes.RecipeGenerator;
+import net.lawliet.copper_additions.datagen.tags.BlockTagGenerator;
+import net.lawliet.copper_additions.datagen.tags.ItemTagGenerator;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -21,10 +26,10 @@ public class ClientDatagen {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
 
-//        generator.addProvider(true,new LanguageGenerator(packOutput,"en_us"));
+        generator.addProvider(true,new LanguageGenerator(packOutput,"en_us"));
         event.createProvider(ModelGenerator::new);
         event.createProvider(EquipmentRenderGenerator::new);
-//        event.createProvider(CraftingRecipeGenerator.Runner::new);
+        event.createProvider(RecipeGenerator.Runner::new);
 //        event.createProvider(DataMapGenerator::new);
 
 
@@ -40,6 +45,10 @@ public class ClientDatagen {
 //                lookupProvider
 //        ));
 //
-//        event.createBlockAndItemTags(BlockTagGenerator::new, ItemTagGenerator::new);
+        event.createProvider(CopperAdditionsGlobalLootModifier::new);
+        event.createBlockAndItemTags(BlockTagGenerator::new, ItemTagGenerator::new);
+
+
+
     }
 }
