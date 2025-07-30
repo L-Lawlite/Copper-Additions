@@ -26,7 +26,7 @@ public class ModelGenerator extends ModelProvider {
         itemModels.generateTrimmableItem(Items.COPPER_CHESTPLATE.get(), EquipmentAssetsPath.COPPER, "chestplate", false);
         itemModels.generateTrimmableItem(Items.COPPER_LEGGINGS.get(), EquipmentAssetsPath.COPPER, "leggings", false);
         itemModels.generateTrimmableItem(Items.COPPER_BOOTS.get(), EquipmentAssetsPath.COPPER, "boots", false);
-
+        itemModels.generateFlatItem(Items.COPPER_HORSE_ARMOR.get(), ModelTemplates.FLAT_ITEM);
     }
 
 }

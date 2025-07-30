@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "copper_additions:item/copper_horse_armor"
+  }
+}

@@ -3,6 +3,7 @@ package net.lawliet.copper_additions.copperAdditionsRegistration;
 import net.lawliet.copper_additions.CopperAdditions;
 import net.lawliet.copper_additions.utility.ArmorMaterialsAddition;
 import net.lawliet.copper_additions.utility.TootMaterialAddition;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -21,27 +22,41 @@ public class Items {
     public static final DeferredItem<Item> COPPER_CHESTPLATE;
     public static final DeferredItem<Item> COPPER_LEGGINGS;
     public static final DeferredItem<Item> COPPER_BOOTS;
+    public static final DeferredItem<Item> COPPER_HORSE_ARMOR;
 
     static {
         COPPER_NUGGET = CopperAdditions.ITEMS.registerSimpleItem("copper_nugget");
-//        COPPER_SWORD = CopperAdditions.ITEMS.registerSimpleItem("copper_sword", new ItemPropertiesUtility().sword(TootMaterialAddition.COPPER, 3.0F, -2.4F));
         COPPER_SWORD = CopperAdditions.ITEMS.registerItem("copper_sword",properties ->  new SwordItem(TootMaterialAddition.COPPER, 3.0F, -2.4F, properties));
         COPPER_SHOVEL = CopperAdditions.ITEMS.registerItem("copper_shovel", properties -> new ShovelItem(TootMaterialAddition.COPPER, 1.5F, -3.0F, properties));
         COPPER_PICKAXE = CopperAdditions.ITEMS.registerItem("copper_pickaxe",properties ->  new PickaxeItem(TootMaterialAddition.COPPER, 1.0F, -2.8F, properties));
         COPPER_AXE = CopperAdditions.ITEMS.registerItem("copper_axe", properties -> new AxeItem(TootMaterialAddition.COPPER, 7.0F, -3.2F, properties));
         COPPER_HOE = CopperAdditions.ITEMS.registerItem("copper_hoe", properties -> new HoeItem(TootMaterialAddition.COPPER, -1.0F, -2.0F, properties));
-//        COPPER_HELMET = CopperAdditions.ITEMS.registerSimpleItem("copper_helmet", new ItemPropertiesUtility());
-//        COPPER_CHESTPLATE = CopperAdditions.ITEMS.registerSimpleItem("copper_chestplate", new ItemPropertiesUtility());
-//        COPPER_LEGGINGS = CopperAdditions.ITEMS.registerSimpleItem("copper_leggings", new ItemPropertiesUtility());
-//        COPPER_BOOTS = CopperAdditions.ITEMS.registerSimpleItem("copper_boots", ArmorMaterialsAddition.COPPER.humanoidProperties(new Item.Properties(), ArmorType.BOOTS));
+
         COPPER_HELMET = CopperAdditions.ITEMS.registerItem("copper_helmet", properties -> new ArmorItem(ArmorMaterialsAddition.COPPER, ArmorType.HELMET, properties));
         COPPER_CHESTPLATE = CopperAdditions.ITEMS.registerItem("copper_chestplate", properties -> new ArmorItem(ArmorMaterialsAddition.COPPER, ArmorType.CHESTPLATE, properties));
         COPPER_LEGGINGS = CopperAdditions.ITEMS.registerItem("copper_leggings", properties -> new ArmorItem(ArmorMaterialsAddition.COPPER, ArmorType.LEGGINGS, properties));
         COPPER_BOOTS = CopperAdditions.ITEMS.registerItem("copper_boots", properties -> new ArmorItem(ArmorMaterialsAddition.COPPER, ArmorType.BOOTS, properties));
-
+        COPPER_HORSE_ARMOR = CopperAdditions.ITEMS.registerItem("copper_horse_armor", properties -> new AnimalArmorItem(ArmorMaterialsAddition.COPPER, AnimalArmorItem.BodyType.EQUESTRIAN, SoundEvents.HORSE_ARMOR, false, properties), new Item.Properties().stacksTo(1));
     }
 
     public static void init() {
         TootMaterialAddition.init();
+    }
+
+    @SuppressWarnings("unused")
+    public static void addCreative(CreativeModeTab.ItemDisplayParameters parameters, CreativeModeTab.Output output) {
+        output.accept(COPPER_NUGGET);
+        output.accept(COPPER_SWORD);
+        output.accept(COPPER_SHOVEL);
+        output.accept(COPPER_PICKAXE);
+        output.accept(COPPER_AXE);
+        output.accept(COPPER_HOE);
+
+        output.accept(COPPER_HELMET);
+        output.accept(COPPER_CHESTPLATE);
+        output.accept(COPPER_LEGGINGS);
+        output.accept(COPPER_BOOTS);
+        output.accept(COPPER_HORSE_ARMOR);
+
     }
 }

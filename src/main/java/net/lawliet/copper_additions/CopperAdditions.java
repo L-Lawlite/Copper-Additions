@@ -1,5 +1,6 @@
 package net.lawliet.copper_additions;
 
+import net.lawliet.copper_additions.copperAdditionsRegistration.CreativeModeTabs;
 import net.lawliet.copper_additions.copperAdditionsRegistration.Items;
 import net.lawliet.copper_additions.copperAdditionsRegistration.SoundEvents;
 import net.minecraft.core.registries.Registries;
@@ -47,6 +48,7 @@ public class CopperAdditions {
     public static void call_init(IEventBus modEventBus) {
         Items.init();
         SoundEvents.init();
+        CreativeModeTabs.init();
 
         SOUND_EVENT.register(modEventBus);
         ITEMS.register(modEventBus);
