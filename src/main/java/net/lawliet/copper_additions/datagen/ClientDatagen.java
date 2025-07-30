@@ -2,6 +2,7 @@ package net.lawliet.copper_additions.datagen;
 
 import com.mojang.logging.LogUtils;
 import net.lawliet.copper_additions.CopperAdditions;
+import net.lawliet.copper_additions.datagen.model.EquipmentRenderGenerator;
 import net.lawliet.copper_additions.datagen.model.ModelGenerator;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -22,6 +23,7 @@ public class ClientDatagen {
 
 //        generator.addProvider(true,new LanguageGenerator(packOutput,"en_us"));
         event.createProvider(ModelGenerator::new);
+        event.createProvider(EquipmentRenderGenerator::new);
 //        event.createProvider(CraftingRecipeGenerator.Runner::new);
 //        event.createProvider(DataMapGenerator::new);
 
