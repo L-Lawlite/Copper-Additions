@@ -45,18 +45,6 @@ public class Items {
 
     @SuppressWarnings("unused")
     public static void addCreative(CreativeModeTab.ItemDisplayParameters parameters, CreativeModeTab.Output output) {
-        output.accept(COPPER_NUGGET);
-        output.accept(COPPER_SWORD);
-        output.accept(COPPER_SHOVEL);
-        output.accept(COPPER_PICKAXE);
-        output.accept(COPPER_AXE);
-        output.accept(COPPER_HOE);
-
-        output.accept(COPPER_HELMET);
-        output.accept(COPPER_CHESTPLATE);
-        output.accept(COPPER_LEGGINGS);
-        output.accept(COPPER_BOOTS);
-        output.accept(COPPER_HORSE_ARMOR);
-
+        CopperAdditions.ITEMS.getEntries().forEach(item -> output.accept(item.get()));
     }
 }
