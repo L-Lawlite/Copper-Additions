@@ -46,6 +46,7 @@ public class ClientDatagen {
 //        ));
 //
         event.createProvider(CopperAdditionsGlobalLootModifier::new);
+
         event.createBlockAndItemTags(BlockTagGenerator::new, ItemTagGenerator::new);
 
 

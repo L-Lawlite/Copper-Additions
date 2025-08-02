@@ -1,13 +1,17 @@
 package net.lawliet.copper_additions;
 
+import com.mojang.serialization.MapCodec;
 import net.lawliet.copper_additions.copperAdditionsRegistration.CreativeModeTabs;
 import net.lawliet.copper_additions.copperAdditionsRegistration.Items;
+import net.lawliet.copper_additions.copperAdditionsRegistration.LootModifiers;
 import net.lawliet.copper_additions.copperAdditionsRegistration.SoundEvents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -32,7 +36,7 @@ public class CopperAdditions {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final DeferredRegister<SoundEvent> SOUND_EVENT = DeferredRegister.create(Registries.SOUND_EVENT,MODID);
-
+    public static final DeferredRegister<MapCodec<? extends IGlobalLootModifier>> LOOT_MODIFIER_SERIALIZER = DeferredRegister.create(NeoForgeRegistries.GLOBAL_LOOT_MODIFIER_SERIALIZERS, MODID);
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -49,11 +53,13 @@ public class CopperAdditions {
         Items.init();
         SoundEvents.init();
         CreativeModeTabs.init();
+        LootModifiers.init();
 
         SOUND_EVENT.register(modEventBus);
         ITEMS.register(modEventBus);
         BLOCKS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
+        LOOT_MODIFIER_SERIALIZER.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
