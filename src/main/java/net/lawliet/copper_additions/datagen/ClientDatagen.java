@@ -3,7 +3,6 @@ package net.lawliet.copper_additions.datagen;
 import com.mojang.logging.LogUtils;
 import net.lawliet.copper_additions.CopperAdditions;
 import net.lawliet.copper_additions.datagen.lang.LanguageGenerator;
-import net.lawliet.copper_additions.datagen.lootTables.CopperAdditionsGlobalLootModifier;
 import net.lawliet.copper_additions.datagen.model.EquipmentRenderGenerator;
 import net.lawliet.copper_additions.datagen.model.ModelGenerator;
 import net.lawliet.copper_additions.datagen.recipes.RecipeGenerator;
@@ -45,7 +44,6 @@ public class ClientDatagen {
 //                lookupProvider
 //        ));
 //
-        event.createProvider(CopperAdditionsGlobalLootModifier::new);
 
         event.createBlockAndItemTags(BlockTagGenerator::new, ItemTagGenerator::new);
 

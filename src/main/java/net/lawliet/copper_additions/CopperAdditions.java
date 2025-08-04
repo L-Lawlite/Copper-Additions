@@ -3,7 +3,6 @@ package net.lawliet.copper_additions;
 import com.mojang.serialization.MapCodec;
 import net.lawliet.copper_additions.copperAdditionsRegistration.CreativeModeTabs;
 import net.lawliet.copper_additions.copperAdditionsRegistration.Items;
-import net.lawliet.copper_additions.copperAdditionsRegistration.LootModifiers;
 import net.lawliet.copper_additions.copperAdditionsRegistration.SoundEvents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvent;
@@ -53,7 +52,7 @@ public class CopperAdditions {
         Items.init();
         SoundEvents.init();
         CreativeModeTabs.init();
-        LootModifiers.init();
+//        LootModifiers.init();
 
         SOUND_EVENT.register(modEventBus);
         ITEMS.register(modEventBus);

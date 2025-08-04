@@ -11,24 +11,20 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
-import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 import java.util.function.Supplier;
 
-public class AddLootIntoPoolModifier extends LootModifier {
+public class AddLootModifier extends LootModifier {
 
-    public static Supplier<MapCodec<AddLootIntoPoolModifier>> CODEC_SUPPLIER = Suppliers.memoize(() -> RecordCodecBuilder
-            .mapCodec(instance -> AddLootIntoPoolModifier.codecStart(instance)
+    public static Supplier<MapCodec<AddLootModifier>> CODEC_SUPPLIER = Suppliers.memoize(() -> RecordCodecBuilder
+            .mapCodec(instance -> AddLootModifier.codecStart(instance)
                     .and(Codec.list(ItemWithChance.CODEC).fieldOf("items_with_chances")
                             .forGetter(e -> e.itemsWithChances))
-                    .apply(instance, AddLootIntoPoolModifier::new)));
+                    .apply(instance, AddLootModifier::new)));
 
     private final List<ItemWithChance> itemsWithChances;
-    public AddLootIntoPoolModifier(LootItemCondition[] conditionsIn, List<ItemWithChance> itemsWithChances) {
+    public AddLootModifier(LootItemCondition[] conditionsIn, List<ItemWithChance> itemsWithChances) {
         super(conditionsIn);
         this.itemsWithChances = itemsWithChances;
     }
@@ -52,29 +48,6 @@ public class AddLootIntoPoolModifier extends LootModifier {
         }
 
         return generatedLoot;
-    }
-
-    @Nullable
-    private ItemWithChance weightedItemSelection(LootContext context) {
-        float totalWeight = itemsWithChances.stream()
-                .map(ItemWithChance::chance)
-                .reduce(0f, Float::sum);
-
-        float randomValue = context.getRandom().nextFloat() * totalWeight;
-        float cumulativeWeight = 0;
-
-        // Create a shuffled copy of the list to remove order bias
-        ArrayList<ItemWithChance> shuffledItems = new ArrayList<>(itemsWithChances);
-        Collections.shuffle(shuffledItems, new Random(context.getRandom().nextLong()));
-
-        for (ItemWithChance ItemWithChance : shuffledItems) {
-            cumulativeWeight += ItemWithChance.chance();
-            if (randomValue <= cumulativeWeight) {
-                return ItemWithChance;
-            }
-        }
-
-        return null;
     }
 
     @Override
