@@ -1,9 +1,8 @@
 package net.lawliet.copper_additions;
 
 import com.mojang.serialization.MapCodec;
-import net.lawliet.copper_additions.copperAdditionsRegistration.CreativeModeTabs;
-import net.lawliet.copper_additions.copperAdditionsRegistration.Items;
-import net.lawliet.copper_additions.copperAdditionsRegistration.SoundEvents;
+import net.lawliet.copper_additions.copperAdditionsRegistration.*;
+import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.CreativeModeTab;
@@ -36,6 +35,7 @@ public class CopperAdditions {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final DeferredRegister<SoundEvent> SOUND_EVENT = DeferredRegister.create(Registries.SOUND_EVENT,MODID);
     public static final DeferredRegister<MapCodec<? extends IGlobalLootModifier>> LOOT_MODIFIER_SERIALIZER = DeferredRegister.create(NeoForgeRegistries.GLOBAL_LOOT_MODIFIER_SERIALIZERS, MODID);
+    public static final DeferredRegister<ParticleType<?>> PARTICLE_TYPES = DeferredRegister.create(Registries.PARTICLE_TYPE, MODID);
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -50,15 +50,18 @@ public class CopperAdditions {
 
     public static void call_init(IEventBus modEventBus) {
         Items.init();
+        Blocks.init();
         SoundEvents.init();
         CreativeModeTabs.init();
-//        LootModifiers.init();
+        ParticleTypes.init();
+        LootModifiers.init();
 
         SOUND_EVENT.register(modEventBus);
         ITEMS.register(modEventBus);
         BLOCKS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
         LOOT_MODIFIER_SERIALIZER.register(modEventBus);
+        PARTICLE_TYPES.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

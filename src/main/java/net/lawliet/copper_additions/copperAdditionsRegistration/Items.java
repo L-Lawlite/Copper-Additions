@@ -3,6 +3,7 @@ package net.lawliet.copper_additions.copperAdditionsRegistration;
 import net.lawliet.copper_additions.CopperAdditions;
 import net.lawliet.copper_additions.utility.ArmorMaterialsAddition;
 import net.lawliet.copper_additions.utility.ToolMaterialAddition;
+import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.ArmorType;
@@ -24,6 +25,21 @@ public class Items {
     public static final DeferredItem<Item> COPPER_BOOTS;
     public static final DeferredItem<Item> COPPER_HORSE_ARMOR;
 
+    public static final DeferredItem<BlockItem> COPPER_TORCH;
+
+    public static final DeferredItem<BlockItem> COPPER_BARS;
+    public static final DeferredItem<BlockItem> EXPOSED_COPPER_BARS;
+    public static final DeferredItem<BlockItem> WEATHERED_COPPER_BARS;
+    public static final DeferredItem<BlockItem> OXIDIZED_COPPER_BARS;
+    public static final DeferredItem<BlockItem> COPPER_CHAINS;
+    public static final DeferredItem<BlockItem> EXPOSED_COPPER_CHAINS;
+    public static final DeferredItem<BlockItem> WEATHERED_COPPER_CHAINS;
+    public static final DeferredItem<BlockItem> OXIDIZED_COPPER_CHAINS;
+    public static final DeferredItem<BlockItem> COPPER_LANTERN;
+    public static final DeferredItem<BlockItem> EXPOSED_COPPER_LANTERN;
+    public static final DeferredItem<BlockItem> WEATHERED_COPPER_LANTERN;
+    public static final DeferredItem<BlockItem> OXIDIZED_COPPER_LANTERN;
+
     static {
         COPPER_NUGGET = CopperAdditions.ITEMS.registerSimpleItem("copper_nugget");
         COPPER_SWORD = CopperAdditions.ITEMS.registerItem("copper_sword",properties ->  new SwordItem(ToolMaterialAddition.COPPER, 3.0F, -2.4F, properties));
@@ -37,6 +53,23 @@ public class Items {
         COPPER_LEGGINGS = CopperAdditions.ITEMS.registerItem("copper_leggings", properties -> new ArmorItem(ArmorMaterialsAddition.COPPER, ArmorType.LEGGINGS, properties));
         COPPER_BOOTS = CopperAdditions.ITEMS.registerItem("copper_boots", properties -> new ArmorItem(ArmorMaterialsAddition.COPPER, ArmorType.BOOTS, properties));
         COPPER_HORSE_ARMOR = CopperAdditions.ITEMS.registerItem("copper_horse_armor", properties -> new AnimalArmorItem(ArmorMaterialsAddition.COPPER, AnimalArmorItem.BodyType.EQUESTRIAN, SoundEvents.HORSE_ARMOR, false, properties), new Item.Properties().stacksTo(1));
+    }
+
+    static {
+        COPPER_TORCH = CopperAdditions.ITEMS.registerItem("copper_torch", properties -> new StandingAndWallBlockItem(Blocks.COPPER_TORCH.get(), Blocks.COPPER_WALL_TORCH.get(), Direction.DOWN, properties));
+
+        COPPER_BARS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.COPPER_BARS);
+        EXPOSED_COPPER_BARS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.EXPOSED_COPPER_BARS);
+        WEATHERED_COPPER_BARS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WEATHERED_COPPER_BARS);
+        OXIDIZED_COPPER_BARS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.OXIDIZED_COPPER_BARS);
+        COPPER_CHAINS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.COPPER_CHAINS);
+        EXPOSED_COPPER_CHAINS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.EXPOSED_COPPER_CHAINS);
+        WEATHERED_COPPER_CHAINS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WEATHERED_COPPER_CHAINS);
+        OXIDIZED_COPPER_CHAINS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.OXIDIZED_COPPER_CHAINS);
+        COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.COPPER_LANTERN);
+        EXPOSED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.EXPOSED_COPPER_LANTERN);
+        WEATHERED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WEATHERED_COPPER_LANTERN);
+        OXIDIZED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.OXIDIZED_COPPER_LANTERN);
     }
 
     public static void init() {
