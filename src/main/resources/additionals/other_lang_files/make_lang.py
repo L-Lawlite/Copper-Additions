@@ -22,7 +22,7 @@ def copy_files() -> None:
             if file_mapping and file in file_mapping:
                 destination_path = os.path.join('other_lang_files/copied_files',file_mapping[file])
                 shutil.copy2(source_path,destination_path)
-def 
+# def 
 
 def main() -> None:
     copy_files()
