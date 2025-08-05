@@ -25,3 +25,5 @@ run-data
 
 repo
 .cache/
+.venv/
+copied_files/
