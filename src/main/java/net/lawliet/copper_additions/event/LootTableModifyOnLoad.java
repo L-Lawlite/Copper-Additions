@@ -14,14 +14,28 @@ import net.neoforged.neoforge.event.LootTableLoadEvent;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
+import java.util.Set;
+
 @EventBusSubscriber(modid = CopperAdditions.MODID)
 public class LootTableModifyOnLoad {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     @SubscribeEvent
     public static void ModifyLootTable(LootTableLoadEvent event) {
+        Set<String> poolsToModify = Set.of(
+                "chests/simple_dungeon",
+                "chests/desert_pyramid",
+                "chests/village/village_weaponsmith",
+                "chests/end_city_treasure",
+                "chests/stronghold_corridor",
+                "chests/jungle_temple",
+                "chests/nether_bridge"
+        );
         LootTable lootTable = event.getTable();
         ResourceLocation tableName = event.getName();
+        if (!poolsToModify.contains(tableName.getPath())) {
+            return;
+        }
         String poolName = "pool0";
         LootPool modificationPool = lootTable.getPool(poolName);
         if (modificationPool != null) {

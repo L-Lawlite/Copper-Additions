@@ -4,6 +4,8 @@ import net.lawliet.copper_additions.CopperAdditions;
 import net.lawliet.copper_additions.blocks.weatheringBlocks.WeatheringCopperBarBlock;
 import net.lawliet.copper_additions.blocks.weatheringBlocks.WeatheringCopperChainBlock;
 import net.lawliet.copper_additions.blocks.weatheringBlocks.WeatheringCopperLanternBlock;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -19,14 +21,31 @@ public class Blocks {
     public static final DeferredBlock<Block> EXPOSED_COPPER_BARS;
     public static final DeferredBlock<Block> WEATHERED_COPPER_BARS;
     public static final DeferredBlock<Block> OXIDIZED_COPPER_BARS;
-    public static final DeferredBlock<Block> COPPER_CHAINS;
-    public static final DeferredBlock<Block> EXPOSED_COPPER_CHAINS;
-    public static final DeferredBlock<Block> WEATHERED_COPPER_CHAINS;
-    public static final DeferredBlock<Block> OXIDIZED_COPPER_CHAINS;
+
+    public static final DeferredBlock<Block> WAXED_COPPER_BARS;
+    public static final DeferredBlock<Block> WAXED_EXPOSED_COPPER_BARS;
+    public static final DeferredBlock<Block> WAXED_WEATHERED_COPPER_BARS;
+    public static final DeferredBlock<Block> WAXED_OXIDIZED_COPPER_BARS;
+
+    public static final DeferredBlock<Block> COPPER_CHAIN;
+    public static final DeferredBlock<Block> EXPOSED_COPPER_CHAIN;
+    public static final DeferredBlock<Block> WEATHERED_COPPER_CHAIN;
+    public static final DeferredBlock<Block> OXIDIZED_COPPER_CHAIN;
+
+    public static final DeferredBlock<Block> WAXED_COPPER_CHAIN;
+    public static final DeferredBlock<Block> WAXED_EXPOSED_COPPER_CHAIN;
+    public static final DeferredBlock<Block> WAXED_WEATHERED_COPPER_CHAIN;
+    public static final DeferredBlock<Block> WAXED_OXIDIZED_COPPER_CHAIN;
+
     public static final DeferredBlock<Block> COPPER_LANTERN;
     public static final DeferredBlock<Block> EXPOSED_COPPER_LANTERN;
     public static final DeferredBlock<Block> WEATHERED_COPPER_LANTERN;
     public static final DeferredBlock<Block> OXIDIZED_COPPER_LANTERN;
+
+    public static final DeferredBlock<Block> WAXED_COPPER_LANTERN;
+    public static final DeferredBlock<Block> WAXED_EXPOSED_COPPER_LANTERN;
+    public static final DeferredBlock<Block> WAXED_WEATHERED_COPPER_LANTERN;
+    public static final DeferredBlock<Block> WAXED_OXIDIZED_COPPER_LANTERN;
 
 
     static {
@@ -60,27 +79,68 @@ public class Blocks {
                 properties -> new WeatheringCopperBarBlock(WeatheringCopper.WeatherState.OXIDIZED, properties),
                 copperBarProperties()
         );
+        WAXED_COPPER_BARS = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_copper_bars",
+                IronBarsBlock::new,
+                copperBarProperties()
+                );
+        WAXED_EXPOSED_COPPER_BARS = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_exposed_copper_bars",
+                IronBarsBlock::new,
+                copperBarProperties()
+        );
+        WAXED_WEATHERED_COPPER_BARS = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_weathered_copper_bars",
+                IronBarsBlock::new,
+                copperBarProperties()
+        );
+        WAXED_OXIDIZED_COPPER_BARS = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_oxidized_copper_bars",
+                IronBarsBlock::new,
+                copperBarProperties()
+        );
 
-        COPPER_CHAINS = CopperAdditions.BLOCKS.registerBlock(
-                "copper_chains",
+
+        COPPER_CHAIN = CopperAdditions.BLOCKS.registerBlock(
+                "copper_chain",
                 properties -> new WeatheringCopperChainBlock(WeatheringCopper.WeatherState.UNAFFECTED, properties),
                 copperChainProperties()
                 );
-        EXPOSED_COPPER_CHAINS = CopperAdditions.BLOCKS.registerBlock(
-                "exposed_copper_chains",
+        EXPOSED_COPPER_CHAIN = CopperAdditions.BLOCKS.registerBlock(
+                "exposed_copper_chain",
                 properties -> new WeatheringCopperChainBlock(WeatheringCopper.WeatherState.EXPOSED, properties),
                 copperChainProperties()
                 );
-        WEATHERED_COPPER_CHAINS = CopperAdditions.BLOCKS.registerBlock(
-                "weathered_copper_chains",
+        WEATHERED_COPPER_CHAIN = CopperAdditions.BLOCKS.registerBlock(
+                "weathered_copper_chain",
                 properties -> new WeatheringCopperChainBlock(WeatheringCopper.WeatherState.WEATHERED, properties),
                 copperChainProperties()
                 );
-        OXIDIZED_COPPER_CHAINS = CopperAdditions.BLOCKS.registerBlock(
-                "oxidized_copper_chains",
+        OXIDIZED_COPPER_CHAIN = CopperAdditions.BLOCKS.registerBlock(
+                "oxidized_copper_chain",
                 properties -> new WeatheringCopperChainBlock(WeatheringCopper.WeatherState.OXIDIZED, properties),
                 copperChainProperties()
                 );
+        WAXED_COPPER_CHAIN = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_copper_chain",
+                ChainBlock::new,
+                copperChainProperties()
+        );
+        WAXED_EXPOSED_COPPER_CHAIN = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_exposed_copper_chain",
+                ChainBlock::new,
+                copperChainProperties()
+        );
+        WAXED_WEATHERED_COPPER_CHAIN = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_weathered_copper_chain",
+                ChainBlock::new,
+                copperChainProperties()
+        );
+        WAXED_OXIDIZED_COPPER_CHAIN = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_oxidized_copper_chain",
+                ChainBlock::new,
+                copperChainProperties()
+        );
 
         COPPER_LANTERN = CopperAdditions.BLOCKS.registerBlock(
                 "copper_lantern",
@@ -100,6 +160,27 @@ public class Blocks {
         OXIDIZED_COPPER_LANTERN = CopperAdditions.BLOCKS.registerBlock(
                 "oxidized_copper_lantern",
                 properties -> new WeatheringCopperLanternBlock(WeatheringCopper.WeatherState.OXIDIZED, properties),
+                copperLanternProperties()
+        );
+
+        WAXED_COPPER_LANTERN = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_copper_lantern",
+                LanternBlock::new,
+                copperLanternProperties()
+        );
+        WAXED_EXPOSED_COPPER_LANTERN = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_exposed_copper_lantern",
+                LanternBlock::new,
+                copperLanternProperties()
+        );
+        WAXED_WEATHERED_COPPER_LANTERN = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_weathered_copper_lantern",
+                LanternBlock::new,
+                copperLanternProperties()
+        );
+        WAXED_OXIDIZED_COPPER_LANTERN = CopperAdditions.BLOCKS.registerBlock(
+                "waxed_oxidized_copper_lantern",
+                LanternBlock::new,
                 copperLanternProperties()
         );
 
@@ -143,4 +224,12 @@ public class Blocks {
     }
 
     public static void init() {}
+
+    @SuppressWarnings("deprecation")
+    public static void modifyRenderLayer() {
+        CopperAdditions.BLOCKS.getEntries().stream().filter(blockHolder -> {
+            String blockPath = blockHolder.getId().getPath();
+            return blockPath.contains("copper_bars") || blockPath.contains("copper_chain");
+        }).forEach(block -> ItemBlockRenderTypes.setRenderLayer(block.get(), RenderType.CUTOUT));
+    }
 }

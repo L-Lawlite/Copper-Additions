@@ -2,7 +2,9 @@ package net.lawliet.copper_additions.datagen;
 
 import com.mojang.logging.LogUtils;
 import net.lawliet.copper_additions.CopperAdditions;
+import net.lawliet.copper_additions.datagen.datamaps.DataMapGenerator;
 import net.lawliet.copper_additions.datagen.lang.LanguageGenerator;
+import net.lawliet.copper_additions.datagen.lootTables.LootTableGenerator;
 import net.lawliet.copper_additions.datagen.model.EquipmentRenderGenerator;
 import net.lawliet.copper_additions.datagen.model.ModelGenerator;
 import net.lawliet.copper_additions.datagen.recipes.RecipeGenerator;
@@ -10,10 +12,15 @@ import net.lawliet.copper_additions.datagen.tags.BlockTagGenerator;
 import net.lawliet.copper_additions.datagen.tags.ItemTagGenerator;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import org.slf4j.Logger;
+
+import java.util.List;
+import java.util.Set;
 
 @EventBusSubscriber(modid = CopperAdditions.MODID)
 public class ClientDatagen {
@@ -29,21 +36,20 @@ public class ClientDatagen {
         event.createProvider(ModelGenerator::new);
         event.createProvider(EquipmentRenderGenerator::new);
         event.createProvider(RecipeGenerator.Runner::new);
-//        event.createProvider(DataMapGenerator::new);
+        event.createProvider(DataMapGenerator::new);
 
 
-//        event.createProvider((output,lookupProvider) -> new LootTableProvider(
-//                output,
-//                Set.of(),
-//                List.of(
-//                    new LootTableProvider.SubProviderEntry(
-//                            LootTableGenerator::new,
-//                            LootContextParamSets.BLOCK
-//                    )
-//                ),
-//                lookupProvider
-//        ));
-//
+        event.createProvider((output,lookupProvider) -> new LootTableProvider(
+                output,
+                Set.of(),
+                List.of(
+                    new LootTableProvider.SubProviderEntry(
+                            LootTableGenerator::new,
+                            LootContextParamSets.BLOCK
+                    )
+                ),
+                lookupProvider
+        ));
 
         event.createBlockAndItemTags(BlockTagGenerator::new, ItemTagGenerator::new);
 

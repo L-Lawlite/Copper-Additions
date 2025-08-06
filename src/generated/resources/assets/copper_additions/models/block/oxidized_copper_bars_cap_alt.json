@@ -1,0 +1,7 @@
+{
+  "parent": "copper_additions:block/template_bars_cap_alt",
+  "textures": {
+    "bars": "copper_additions:block/oxidized_copper_bars",
+    "edge": "copper_additions:block/oxidized_copper_bars"
+  }
+}

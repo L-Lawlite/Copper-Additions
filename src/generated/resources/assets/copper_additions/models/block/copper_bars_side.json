@@ -1,0 +1,7 @@
+{
+  "parent": "copper_additions:block/template_bars_side",
+  "textures": {
+    "bars": "copper_additions:block/copper_bars",
+    "edge": "copper_additions:block/copper_bars"
+  }
+}

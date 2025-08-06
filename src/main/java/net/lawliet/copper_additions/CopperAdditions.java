@@ -42,6 +42,7 @@ public class CopperAdditions {
     public CopperAdditions(IEventBus modEventBus, ModContainer modContainer) {
 
         CopperAdditions.call_init(modEventBus);
+        modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
@@ -67,6 +68,7 @@ public class CopperAdditions {
     private void commonSetup(FMLCommonSetupEvent event) {
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
+        Blocks.modifyRenderLayer();
     }
 
 
