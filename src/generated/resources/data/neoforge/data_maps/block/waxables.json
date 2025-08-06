@@ -1,0 +1,40 @@
+{
+  "values": {
+    "copper_additions:copper_bars": {
+      "waxed": "copper_additions:waxed_copper_bars"
+    },
+    "copper_additions:copper_chain": {
+      "waxed": "copper_additions:waxed_copper_chain"
+    },
+    "copper_additions:copper_lantern": {
+      "waxed": "copper_additions:waxed_copper_lantern"
+    },
+    "copper_additions:exposed_copper_bars": {
+      "waxed": "copper_additions:waxed_exposed_copper_bars"
+    },
+    "copper_additions:exposed_copper_chain": {
+      "waxed": "copper_additions:waxed_exposed_copper_chain"
+    },
+    "copper_additions:exposed_copper_lantern": {
+      "waxed": "copper_additions:waxed_exposed_copper_lantern"
+    },
+    "copper_additions:oxidized_copper_bars": {
+      "waxed": "copper_additions:waxed_oxidized_copper_bars"
+    },
+    "copper_additions:oxidized_copper_chain": {
+      "waxed": "copper_additions:waxed_oxidized_copper_chain"
+    },
+    "copper_additions:oxidized_copper_lantern": {
+      "waxed": "copper_additions:waxed_oxidized_copper_lantern"
+    },
+    "copper_additions:weathered_copper_bars": {
+      "waxed": "copper_additions:waxed_weathered_copper_bars"
+    },
+    "copper_additions:weathered_copper_chain": {
+      "waxed": "copper_additions:waxed_weathered_copper_chain"
+    },
+    "copper_additions:weathered_copper_lantern": {
+      "waxed": "copper_additions:waxed_weathered_copper_lantern"
+    }
+  }
+}

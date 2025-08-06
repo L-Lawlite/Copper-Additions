@@ -1,0 +1,31 @@
+{
+  "values": {
+    "copper_additions:copper_bars": {
+      "next_oxidation_stage": "copper_additions:exposed_copper_bars"
+    },
+    "copper_additions:copper_chain": {
+      "next_oxidation_stage": "copper_additions:exposed_copper_chain"
+    },
+    "copper_additions:copper_lantern": {
+      "next_oxidation_stage": "copper_additions:exposed_copper_lantern"
+    },
+    "copper_additions:exposed_copper_bars": {
+      "next_oxidation_stage": "copper_additions:weathered_copper_bars"
+    },
+    "copper_additions:exposed_copper_chain": {
+      "next_oxidation_stage": "copper_additions:weathered_copper_chain"
+    },
+    "copper_additions:exposed_copper_lantern": {
+      "next_oxidation_stage": "copper_additions:weathered_copper_lantern"
+    },
+    "copper_additions:weathered_copper_bars": {
+      "next_oxidation_stage": "copper_additions:oxidized_copper_bars"
+    },
+    "copper_additions:weathered_copper_chain": {
+      "next_oxidation_stage": "copper_additions:oxidized_copper_chain"
+    },
+    "copper_additions:weathered_copper_lantern": {
+      "next_oxidation_stage": "copper_additions:oxidized_copper_lantern"
+    }
+  }
+}

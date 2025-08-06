@@ -31,23 +31,24 @@ public class Items {
     public static final DeferredItem<BlockItem> EXPOSED_COPPER_BARS;
     public static final DeferredItem<BlockItem> WEATHERED_COPPER_BARS;
     public static final DeferredItem<BlockItem> OXIDIZED_COPPER_BARS;
-    public static final DeferredItem<BlockItem> COPPER_CHAINS;
-    public static final DeferredItem<BlockItem> EXPOSED_COPPER_CHAINS;
-    public static final DeferredItem<BlockItem> WEATHERED_COPPER_CHAINS;
-    public static final DeferredItem<BlockItem> OXIDIZED_COPPER_CHAINS;
-    public static final DeferredItem<BlockItem> COPPER_LANTERN;
-    public static final DeferredItem<BlockItem> EXPOSED_COPPER_LANTERN;
-    public static final DeferredItem<BlockItem> WEATHERED_COPPER_LANTERN;
-    public static final DeferredItem<BlockItem> OXIDIZED_COPPER_LANTERN;
-
     public static final DeferredItem<BlockItem> WAXED_COPPER_BARS;
     public static final DeferredItem<BlockItem> WAXED_EXPOSED_COPPER_BARS;
     public static final DeferredItem<BlockItem> WAXED_WEATHERED_COPPER_BARS;
     public static final DeferredItem<BlockItem> WAXED_OXIDIZED_COPPER_BARS;
+
+    public static final DeferredItem<BlockItem> COPPER_CHAIN;
+    public static final DeferredItem<BlockItem> EXPOSED_COPPER_CHAIN;
+    public static final DeferredItem<BlockItem> WEATHERED_COPPER_CHAIN;
+    public static final DeferredItem<BlockItem> OXIDIZED_COPPER_CHAIN;
     public static final DeferredItem<BlockItem> WAXED_COPPER_CHAINS;
     public static final DeferredItem<BlockItem> WAXED_EXPOSED_COPPER_CHAINS;
     public static final DeferredItem<BlockItem> WAXED_WEATHERED_COPPER_CHAINS;
     public static final DeferredItem<BlockItem> WAXED_OXIDIZED_COPPER_CHAINS;
+
+    public static final DeferredItem<BlockItem> COPPER_LANTERN;
+    public static final DeferredItem<BlockItem> EXPOSED_COPPER_LANTERN;
+    public static final DeferredItem<BlockItem> WEATHERED_COPPER_LANTERN;
+    public static final DeferredItem<BlockItem> OXIDIZED_COPPER_LANTERN;
     public static final DeferredItem<BlockItem> WAXED_COPPER_LANTERN;
     public static final DeferredItem<BlockItem> WAXED_EXPOSED_COPPER_LANTERN;
     public static final DeferredItem<BlockItem> WAXED_WEATHERED_COPPER_LANTERN;
@@ -75,10 +76,10 @@ public class Items {
         EXPOSED_COPPER_BARS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.EXPOSED_COPPER_BARS);
         WEATHERED_COPPER_BARS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WEATHERED_COPPER_BARS);
         OXIDIZED_COPPER_BARS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.OXIDIZED_COPPER_BARS);
-        COPPER_CHAINS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.COPPER_CHAIN);
-        EXPOSED_COPPER_CHAINS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.EXPOSED_COPPER_CHAIN);
-        WEATHERED_COPPER_CHAINS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WEATHERED_COPPER_CHAIN);
-        OXIDIZED_COPPER_CHAINS = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.OXIDIZED_COPPER_CHAIN);
+        COPPER_CHAIN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.COPPER_CHAIN);
+        EXPOSED_COPPER_CHAIN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.EXPOSED_COPPER_CHAIN);
+        WEATHERED_COPPER_CHAIN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WEATHERED_COPPER_CHAIN);
+        OXIDIZED_COPPER_CHAIN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.OXIDIZED_COPPER_CHAIN);
         COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.COPPER_LANTERN);
         EXPOSED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.EXPOSED_COPPER_LANTERN);
         WEATHERED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WEATHERED_COPPER_LANTERN);

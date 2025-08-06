@@ -10,7 +10,6 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
@@ -30,18 +29,16 @@ public class RecipeGenerator extends RecipeProvider{
 
 
     private void smeltingRecipeGenerator() {
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(new ItemLike[]{
-                Items.COPPER_PICKAXE,
-                Items.COPPER_SHOVEL,
-                Items.COPPER_AXE,
-                Items.COPPER_HOE,
-                Items.COPPER_SWORD,
-                Items.COPPER_HELMET,
-                Items.COPPER_CHESTPLATE,
-                Items.COPPER_LEGGINGS,
-                Items.COPPER_BOOTS,
-                Items.COPPER_HORSE_ARMOR
-        }), RecipeCategory.MISC, Items.COPPER_NUGGET, 0.1F, 200)
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.COPPER_PICKAXE,
+                        Items.COPPER_SHOVEL,
+                        Items.COPPER_AXE,
+                        Items.COPPER_HOE,
+                        Items.COPPER_SWORD,
+                        Items.COPPER_HELMET,
+                        Items.COPPER_CHESTPLATE,
+                        Items.COPPER_LEGGINGS,
+                        Items.COPPER_BOOTS,
+                        Items.COPPER_HORSE_ARMOR), RecipeCategory.MISC, Items.COPPER_NUGGET, 0.1F, 200)
                 .unlockedBy("has_copper_pickaxe", this.has(Items.COPPER_PICKAXE))
                 .unlockedBy("has_copper_shovel", this.has(Items.COPPER_SHOVEL))
                 .unlockedBy("has_copper_axe", this.has(Items.COPPER_AXE))
@@ -57,18 +54,16 @@ public class RecipeGenerator extends RecipeProvider{
     }
 
     private void blastingRecipeGenerator() {
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(new ItemLike[]{
-                Items.COPPER_PICKAXE,
-                Items.COPPER_SHOVEL,
-                Items.COPPER_AXE,
-                Items.COPPER_HOE,
-                Items.COPPER_SWORD,
-                Items.COPPER_HELMET,
-                Items.COPPER_CHESTPLATE,
-                Items.COPPER_LEGGINGS,
-                Items.COPPER_BOOTS,
-                Items.COPPER_HORSE_ARMOR
-        }), RecipeCategory.MISC, Items.COPPER_NUGGET, 0.1F, 100)
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(Items.COPPER_PICKAXE,
+                        Items.COPPER_SHOVEL,
+                        Items.COPPER_AXE,
+                        Items.COPPER_HOE,
+                        Items.COPPER_SWORD,
+                        Items.COPPER_HELMET,
+                        Items.COPPER_CHESTPLATE,
+                        Items.COPPER_LEGGINGS,
+                        Items.COPPER_BOOTS,
+                        Items.COPPER_HORSE_ARMOR), RecipeCategory.MISC, Items.COPPER_NUGGET, 0.1F, 100)
                 .unlockedBy("has_copper_pickaxe", this.has(Items.COPPER_PICKAXE))
                 .unlockedBy("has_copper_shovel", this.has(Items.COPPER_SHOVEL))
                 .unlockedBy("has_copper_axe", this.has(Items.COPPER_AXE))
@@ -80,7 +75,6 @@ public class RecipeGenerator extends RecipeProvider{
                 .unlockedBy("has_copper_boots", this.has(Items.COPPER_BOOTS))
                 .unlockedBy("has_copper_horse_armor", this.has(Items.COPPER_HORSE_ARMOR))
                 .save(this.output,"%s:%s".formatted(CopperAdditions.MODID, getBlastingRecipeName(Items.COPPER_NUGGET)));
-
     }
 
     private void craftingRecipeGenerator() {
@@ -147,6 +141,38 @@ public class RecipeGenerator extends RecipeProvider{
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X").unlockedBy("has_iron_ingot", this.has(Tags.Items.INGOTS_COPPER))
+                .save(this.output);
+        this.shaped(RecipeCategory.DECORATIONS, Items.COPPER_CHAIN)
+                .define('I', net.minecraft.world.item.Items.COPPER_INGOT)
+                .define('N', Items.COPPER_NUGGET)
+                .pattern("N")
+                .pattern("I")
+                .pattern("N")
+                .unlockedBy("has_copper_nugget", this.has(Items.COPPER_NUGGET))
+                .unlockedBy("has_copper_ingot", this.has(net.minecraft.world.item.Items.COPPER_INGOT))
+                .save(this.output);
+        this.shaped(RecipeCategory.DECORATIONS, Items.COPPER_BARS, 16)
+                .define('#', net.minecraft.world.item.Items.COPPER_INGOT)
+                .pattern("###")
+                .pattern("###")
+                .unlockedBy("has_copper_ingot", this.has(net.minecraft.world.item.Items.COPPER_INGOT))
+                .save(this.output);
+        this.shaped(RecipeCategory.DECORATIONS, Items.COPPER_LANTERN)
+                .define('#', Items.COPPER_TORCH)
+                .define('X', Items.COPPER_NUGGET)
+                .pattern("XXX")
+                .pattern("X#X")
+                .pattern("XXX")
+                .unlockedBy("has_copper_torch", this.has(Items.COPPER_TORCH))
+                .save(this.output);
+        this.shaped(RecipeCategory.DECORATIONS, Items.COPPER_TORCH, 4)
+                .define('X', Ingredient.of(net.minecraft.world.item.Items.COAL, net.minecraft.world.item.Items.CHARCOAL))
+                .define('#', net.minecraft.world.item.Items.STICK)
+                .define('C', Items.COPPER_NUGGET)
+                .pattern("C")
+                .pattern("X")
+                .pattern("#")
+                .unlockedBy("has_copper_nugget", this.has(Items.COPPER_NUGGET))
                 .save(this.output);
     } 
 
