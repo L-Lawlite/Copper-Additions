@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Massa cuprea",
     "item.copper_additions.copper_pickaxe": "Dolabra cuprea",
     "item.copper_additions.copper_shovel": "Pala cuprea",
-    "item.copper_additions.copper_sword": "Gladius cupreus"
+    "item.copper_additions.copper_sword": "Gladius cupreus",
+    "item.copper_additions.copper_torch": "Fax cuprea"
 }

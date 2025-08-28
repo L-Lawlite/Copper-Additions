@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Vasevaland",
     "item.copper_additions.copper_pickaxe": "Vaskkirka",
     "item.copper_additions.copper_shovel": "Vasklabidas",
-    "item.copper_additions.copper_sword": "Vaskmõõk"
+    "item.copper_additions.copper_sword": "Vaskmõõk",
+    "item.copper_additions.copper_torch": "Vasktõrvik"
 }

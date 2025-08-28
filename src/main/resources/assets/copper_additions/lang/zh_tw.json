@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "銅粒",
     "item.copper_additions.copper_pickaxe": "銅鎬",
     "item.copper_additions.copper_shovel": "銅鏟",
-    "item.copper_additions.copper_sword": "銅劍"
+    "item.copper_additions.copper_sword": "銅劍",
+    "item.copper_additions.copper_torch": "銅火把"
 }

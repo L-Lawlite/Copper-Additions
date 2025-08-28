@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Меден къшей",
     "item.copper_additions.copper_pickaxe": "Медна кирка",
     "item.copper_additions.copper_shovel": "Медна лопата",
-    "item.copper_additions.copper_sword": "Меден меч"
+    "item.copper_additions.copper_sword": "Меден меч",
+    "item.copper_additions.copper_torch": "Медна факла"
 }

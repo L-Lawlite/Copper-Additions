@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Vario grynuolis",
     "item.copper_additions.copper_pickaxe": "Varinis kirtiklis",
     "item.copper_additions.copper_shovel": "Varinis kastuvas",
-    "item.copper_additions.copper_sword": "Varinis kardas"
+    "item.copper_additions.copper_sword": "Varinis kardas",
+    "item.copper_additions.copper_torch": "Vario deglas"
 }

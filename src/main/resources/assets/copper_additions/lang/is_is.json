@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Koparmoli",
     "item.copper_additions.copper_pickaxe": "Koparhaki",
     "item.copper_additions.copper_shovel": "Koparskófla",
-    "item.copper_additions.copper_sword": "Koparsverð"
+    "item.copper_additions.copper_sword": "Koparsverð",
+    "item.copper_additions.copper_torch": "Koparkyndill"
 }

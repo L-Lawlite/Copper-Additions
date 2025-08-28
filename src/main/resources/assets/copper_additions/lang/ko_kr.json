@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "구리 조각",
     "item.copper_additions.copper_pickaxe": "구리 곡괭이",
     "item.copper_additions.copper_shovel": "구리 삽",
-    "item.copper_additions.copper_sword": "구리 검"
+    "item.copper_additions.copper_sword": "구리 검",
+    "item.copper_additions.copper_torch": "구리 횃불"
 }

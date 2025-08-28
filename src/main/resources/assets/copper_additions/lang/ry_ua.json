@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Мідный самородок",
     "item.copper_additions.copper_pickaxe": "Мідный чекан",
     "item.copper_additions.copper_shovel": "Мідна лопата",
-    "item.copper_additions.copper_sword": "Мідный меч"
+    "item.copper_additions.copper_sword": "Мідный меч",
+    "item.copper_additions.copper_torch": "Copper Torch"
 }

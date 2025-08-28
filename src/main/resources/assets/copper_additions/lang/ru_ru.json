@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Кусочек меди",
     "item.copper_additions.copper_pickaxe": "Медная кирка",
     "item.copper_additions.copper_shovel": "Медная лопата",
-    "item.copper_additions.copper_sword": "Медный меч"
+    "item.copper_additions.copper_sword": "Медный меч",
+    "item.copper_additions.copper_torch": "Медный факел"
 }

@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Kuparihippu",
     "item.copper_additions.copper_pickaxe": "Kuparihakku",
     "item.copper_additions.copper_shovel": "Kuparilapio",
-    "item.copper_additions.copper_sword": "Kuparimiekka"
+    "item.copper_additions.copper_sword": "Kuparimiekka",
+    "item.copper_additions.copper_torch": "Kuparisoihtu"
 }

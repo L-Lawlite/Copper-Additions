@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Koperklompje",
     "item.copper_additions.copper_pickaxe": "Koperen houweel",
     "item.copper_additions.copper_shovel": "Koperen schep",
-    "item.copper_additions.copper_sword": "Koperen zwaard"
+    "item.copper_additions.copper_sword": "Koperen zwaard",
+    "item.copper_additions.copper_torch": "Koperfakkel"
 }

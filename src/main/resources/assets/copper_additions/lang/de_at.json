@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Kupfaklumpn",
     "item.copper_additions.copper_pickaxe": "Kupfaspitzhock",
     "item.copper_additions.copper_shovel": "Kupfaschaufl",
-    "item.copper_additions.copper_sword": "Kupfaschweat"
+    "item.copper_additions.copper_sword": "Kupfaschweat",
+    "item.copper_additions.copper_torch": "Kupfafackl"
 }

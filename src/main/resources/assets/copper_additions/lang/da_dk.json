@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Kobberklump",
     "item.copper_additions.copper_pickaxe": "Kobberhakke",
     "item.copper_additions.copper_shovel": "Kobberspade",
-    "item.copper_additions.copper_sword": "Kobbersværd"
+    "item.copper_additions.copper_sword": "Kobbersværd",
+    "item.copper_additions.copper_torch": "Kobberfakkel"
 }

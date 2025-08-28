@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Kupferklumpen",
     "item.copper_additions.copper_pickaxe": "Kupferspitzhacke",
     "item.copper_additions.copper_shovel": "Kupferschaufel",
-    "item.copper_additions.copper_sword": "Kupferschwert"
+    "item.copper_additions.copper_sword": "Kupferschwert",
+    "item.copper_additions.copper_torch": "Kupferfackel"
 }

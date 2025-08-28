@@ -35,5 +35,6 @@
     "item.copper_additions.copper_nugget": "Doubloon o' copper",
     "item.copper_additions.copper_pickaxe": "Pickaxe o' copper",
     "item.copper_additions.copper_shovel": "Spade o' copper",
-    "item.copper_additions.copper_sword": "Cutlass o' copper"
+    "item.copper_additions.copper_sword": "Cutlass o' copper",
+    "item.copper_additions.copper_torch": "Copper Torch"
 }
