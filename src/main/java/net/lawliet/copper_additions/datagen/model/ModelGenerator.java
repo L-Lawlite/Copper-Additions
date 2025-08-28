@@ -166,7 +166,4 @@ public class ModelGenerator extends ModelProvider {
     public static TextureMapping bars(Block block) {
         return new TextureMapping().put(TextureSlotAdditions.BARS, TextureMapping.getBlockTexture(block)).put(TextureSlot.EDGE, TextureMapping.getBlockTexture(block));
     }
-
-
-
 }

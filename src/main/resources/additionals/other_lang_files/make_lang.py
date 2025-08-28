@@ -22,10 +22,28 @@ def copy_files() -> None:
             if file_mapping and file in file_mapping:
                 destination_path = os.path.join('other_lang_files/copied_files',file_mapping[file])
                 shutil.copy2(source_path,destination_path)
-# def 
+
+def make_actual_lang_file(output_folder:str):
+    with open('other_lang_files/keys_to_copy.json') as f:
+        keys_to_copy = json.load(f)
+    with open('other_lang_files/keys_to_ignore_rename.json') as f:
+        keys_to_not_rename = json.load(f) 
+    for root,_,files in tqdm(os.walk('./other_lang_files/copied_files')):
+        for file in files:
+            final_data = {}
+            with open(os.path.join(root,file), encoding="utf-8") as f:
+                data:dict[str,str] = json.load(f)
+            temp_data = {k:v for k,v in data.items() if k in keys_to_copy}
+            final_data = {(k.replace('minecraft',mod_id) if k not in keys_to_not_rename else k):v for k,v in temp_data.items()} 
+            with open(f'{output_folder}/{file}', 'w', encoding="utf-8") as writen_file:
+                json.dump(final_data,writen_file,indent=4, ensure_ascii=False)
+
+
 
 def main() -> None:
-    copy_files()
+    # copy_files()
+    make_actual_lang_file(r'D:\Minecraft mods\Copper-Additions\src\main\resources\assets\copper_additions\lang')
 
 if __name__ == "__main__":
+    mod_id = 'copper_additions'
     main()
