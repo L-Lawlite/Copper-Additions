@@ -1,10 +1,12 @@
 package net.lawliet.copper_additions.datagen.tags;
 
 import net.lawliet.copper_additions.CopperAdditions;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
@@ -27,6 +29,13 @@ public class CopperAdditionsTags {
         private static TagKey<Item> copperAdditionsTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CopperAdditions.MODID, name));
         }
+    }
+
+    public static class EntityTypes {
+        private static TagKey<EntityType<?>> copperAdditionsTag(String name) {
+            return TagKey.create(Registries.ENTITY_TYPE,ResourceLocation.fromNamespaceAndPath(CopperAdditions.MODID, name));
+        }
+        public static final TagKey<EntityType<?>> CAN_SPAWN_WITH_COPPER_ARMOR = copperAdditionsTag("can_spawn_with_copper_armor");
     }
 
 

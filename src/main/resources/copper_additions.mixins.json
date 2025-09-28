@@ -2,7 +2,9 @@
   "required": true,
   "package": "net.lawliet.copper_additions.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "MobAccessor"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

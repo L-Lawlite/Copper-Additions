@@ -9,6 +9,7 @@ import net.lawliet.copper_additions.datagen.model.EquipmentRenderGenerator;
 import net.lawliet.copper_additions.datagen.model.ModelGenerator;
 import net.lawliet.copper_additions.datagen.recipes.RecipeGenerator;
 import net.lawliet.copper_additions.datagen.tags.BlockTagGenerator;
+import net.lawliet.copper_additions.datagen.tags.EntityTypeTagGenerator;
 import net.lawliet.copper_additions.datagen.tags.ItemTagGenerator;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -52,7 +53,7 @@ public class ClientDatagen {
         ));
 
         event.createBlockAndItemTags(BlockTagGenerator::new, ItemTagGenerator::new);
-
+        event.createProvider(EntityTypeTagGenerator::new);
 
 
     }
