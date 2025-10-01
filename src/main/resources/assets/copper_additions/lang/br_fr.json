@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Chadenn houarn",
+    "block.minecraft.chain": "Chadenn",
     "block.copper_additions.copper_bars": "Barrennoù kouevr",
     "block.copper_additions.copper_chain": "Chadenn gouevr",
     "block.copper_additions.copper_lantern": "Letern kouevr",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Pigell gouevr",
     "item.copper_additions.copper_shovel": "Pal gouevr",
     "item.copper_additions.copper_sword": "Kleze kouevr",
+    "subtitles.item.armor.equip_copper": "Harnez kouevr o tiridignat",
     "item.copper_additions.copper_torch": "Etev-gouloù kouevr"
 }

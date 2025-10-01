@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Желѣзная цѣпь",
+    "block.minecraft.chain": "Цѣпь",
     "block.copper_additions.copper_bars": "Мѣдные прутья",
     "block.copper_additions.copper_chain": "Мѣдная цѣпь",
     "block.copper_additions.copper_lantern": "Мѣдный фонарь",
@@ -10,7 +10,7 @@
     "block.copper_additions.oxidized_copper_bars": "Окисленные мѣдные прутья",
     "block.copper_additions.oxidized_copper_chain": "Окисленная мѣдная цѣпь",
     "block.copper_additions.oxidized_copper_lantern": "Окисленный мѣдный фонарь",
-    "block.copper_additions.waxed_copper_bars": "Вощёная мѣдная рѣшётка",
+    "block.copper_additions.waxed_copper_bars": "Вощёные мѣдные прутья",
     "block.copper_additions.waxed_copper_chain": "Вощёная мѣдная цѣпь",
     "block.copper_additions.waxed_copper_lantern": "Вощёный мѣдный фонарь",
     "block.copper_additions.waxed_exposed_copper_bars": "Вощёные патиновые мѣдные прутья",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Мѣдная кирка",
     "item.copper_additions.copper_shovel": "Мѣдная лопата",
     "item.copper_additions.copper_sword": "Мѣдный мечъ",
+    "subtitles.item.armor.equip_copper": "Треньканье мѣдной брони",
     "item.copper_additions.copper_torch": "Мѣдный факелъ"
 }

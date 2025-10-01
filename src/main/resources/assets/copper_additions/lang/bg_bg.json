@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Желязна верига",
+    "block.minecraft.chain": "Верига",
     "block.copper_additions.copper_bars": "Медни решетки",
     "block.copper_additions.copper_chain": "Меднa веригa",
     "block.copper_additions.copper_lantern": "Меден фенер",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Медна кирка",
     "item.copper_additions.copper_shovel": "Медна лопата",
     "item.copper_additions.copper_sword": "Меден меч",
+    "subtitles.item.armor.equip_copper": "Медна броня дрънчи",
     "item.copper_additions.copper_torch": "Медна факла"
 }

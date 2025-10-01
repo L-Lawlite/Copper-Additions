@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "IJzeren ketting",
+    "block.minecraft.chain": "Ketting",
     "block.copper_additions.copper_bars": "Koperen tralies",
     "block.copper_additions.copper_chain": "Koperen ketting",
     "block.copper_additions.copper_lantern": "Koperen lantaarn",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Koperen houweel",
     "item.copper_additions.copper_shovel": "Koperen schep",
     "item.copper_additions.copper_sword": "Koperen zwaard",
+    "subtitles.item.armor.equip_copper": "Koperen harnas rammelt",
     "item.copper_additions.copper_torch": "Koperfakkel"
 }

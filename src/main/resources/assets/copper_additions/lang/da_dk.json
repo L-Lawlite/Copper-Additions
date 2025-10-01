@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Jernkæde",
+    "block.minecraft.chain": "Kæde",
     "block.copper_additions.copper_bars": "Kobbertremmer",
     "block.copper_additions.copper_chain": "Kobberkæde",
     "block.copper_additions.copper_lantern": "Kobberlanterne",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Kobberhakke",
     "item.copper_additions.copper_shovel": "Kobberspade",
     "item.copper_additions.copper_sword": "Kobbersværd",
+    "subtitles.item.armor.equip_copper": "Kobberrustning dunker",
     "item.copper_additions.copper_torch": "Kobberfakkel"
 }

@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "銅のツルハシ",
     "item.copper_additions.copper_shovel": "銅のシャベル",
     "item.copper_additions.copper_sword": "銅の剣",
+    "subtitles.item.armor.equip_copper": "銅の防具が装着される",
     "item.copper_additions.copper_torch": "銅の松明"
 }

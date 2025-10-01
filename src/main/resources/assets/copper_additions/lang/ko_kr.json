@@ -1,10 +1,10 @@
 {
-    "block.minecraft.chain": "철 사슬",
+    "block.minecraft.chain": "사슬",
     "block.copper_additions.copper_bars": "구리 창살",
     "block.copper_additions.copper_chain": "구리 사슬",
     "block.copper_additions.copper_lantern": "구리 랜턴",
     "block.copper_additions.copper_torch": "구리 횃불",
-    "block.copper_additions.exposed_copper_bars": "약간 녹슨 구리 철창",
+    "block.copper_additions.exposed_copper_bars": "약간 녹슨 구리 창살",
     "block.copper_additions.exposed_copper_chain": "약간 녹슨 구리 사슬",
     "block.copper_additions.exposed_copper_lantern": "약간 녹슨 구리 랜턴",
     "block.copper_additions.oxidized_copper_bars": "산화된 구리 창살",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "구리 곡괭이",
     "item.copper_additions.copper_shovel": "구리 삽",
     "item.copper_additions.copper_sword": "구리 검",
+    "subtitles.item.armor.equip_copper": "구리 갑옷이 덜컹거림",
     "item.copper_additions.copper_torch": "구리 횃불"
 }

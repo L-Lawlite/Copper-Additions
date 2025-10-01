@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Железная цепь",
+    "block.minecraft.chain": "Цепь",
     "block.copper_additions.copper_bars": "Медные прутья",
     "block.copper_additions.copper_chain": "Медная цепь",
     "block.copper_additions.copper_lantern": "Медный фонарь",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Медная кирка",
     "item.copper_additions.copper_shovel": "Медная лопата",
     "item.copper_additions.copper_sword": "Медный меч",
+    "subtitles.item.armor.equip_copper": "Лязг медной брони",
     "item.copper_additions.copper_torch": "Медный факел"
 }

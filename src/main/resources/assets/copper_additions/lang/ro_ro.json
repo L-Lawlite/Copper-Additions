@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Lanț de fier",
+    "block.minecraft.chain": "Lanț",
     "block.copper_additions.copper_bars": "Gratii de cupru",
     "block.copper_additions.copper_chain": "Lanț de cupru",
     "block.copper_additions.copper_lantern": "Felinar de cupru",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Târnăcop de cupru",
     "item.copper_additions.copper_shovel": "Lopată de cupru",
     "item.copper_additions.copper_sword": "Sabie de cupru",
+    "subtitles.item.armor.equip_copper": "Armura de cupru zdrăngăne",
     "item.copper_additions.copper_torch": "Torță de cupru"
 }

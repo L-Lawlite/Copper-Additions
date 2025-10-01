@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Rantai besi",
+    "block.minecraft.chain": "Rantai",
     "block.copper_additions.copper_bars": "Terali tembaga",
     "block.copper_additions.copper_chain": "Rantai tembaga",
     "block.copper_additions.copper_lantern": "Lentera tembaga",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Belioeng tembaga",
     "item.copper_additions.copper_shovel": "Sekop tembaga",
     "item.copper_additions.copper_sword": "Pedang tembaga",
+    "subtitles.item.armor.equip_copper": "Zirah tembaga berdentong",
     "item.copper_additions.copper_torch": "Obor tembaga"
 }

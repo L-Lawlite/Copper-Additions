@@ -30,11 +30,12 @@
     "item.copper_additions.copper_chestplate": "Мідний кирас",
     "item.copper_additions.copper_helmet": "Мідний шолом",
     "item.copper_additions.copper_hoe": "Мідна сапка",
-    "item.copper_additions.copper_horse_armor": "Мідна конєча бронє",
+    "item.copper_additions.copper_horse_armor": "Мідна конєчє бронє",
     "item.copper_additions.copper_leggings": "Мідні ногавицї",
     "item.copper_additions.copper_nugget": "Мідний кавальчик",
     "item.copper_additions.copper_pickaxe": "Мідний дзюбак",
     "item.copper_additions.copper_shovel": "Мідний рискаль",
     "item.copper_additions.copper_sword": "Мідний меч",
+    "subtitles.item.armor.equip_copper": "Дзелїзна бронє дзвінче",
     "item.copper_additions.copper_torch": "Мідний смолоскіп"
 }

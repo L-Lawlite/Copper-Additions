@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Železný řetěz",
+    "block.minecraft.chain": "Řetěz",
     "block.copper_additions.copper_bars": "Měděné mříže",
     "block.copper_additions.copper_chain": "Měděný řetěz",
     "block.copper_additions.copper_lantern": "Měděná lucerna",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Měděný krumpáč",
     "item.copper_additions.copper_shovel": "Měděná lopata",
     "item.copper_additions.copper_sword": "Měděný meč",
+    "subtitles.item.armor.equip_copper": "měděná zbroj řinčí",
     "item.copper_additions.copper_torch": "Měděná louč"
 }

@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Corrente de Ferro",
+    "block.minecraft.chain": "Corrente",
     "block.copper_additions.copper_bars": "Barras de Cobre",
     "block.copper_additions.copper_chain": "Corrente de Cobre",
     "block.copper_additions.copper_lantern": "Lampião de Cobre",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Picareta de Cobre",
     "item.copper_additions.copper_shovel": "Pá de Cobre",
     "item.copper_additions.copper_sword": "Espada de Cobre",
+    "subtitles.item.armor.equip_copper": "Armadura de cobre equipada",
     "item.copper_additions.copper_torch": "Tocha de Cobre"
 }

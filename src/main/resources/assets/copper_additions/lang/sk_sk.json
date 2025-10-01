@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Železná reťaz",
+    "block.minecraft.chain": "Reťaz",
     "block.copper_additions.copper_bars": "Medené mreže",
     "block.copper_additions.copper_chain": "Medená reťaz",
     "block.copper_additions.copper_lantern": "Medený lampáš",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Medený krompáč",
     "item.copper_additions.copper_shovel": "Medená lopata",
     "item.copper_additions.copper_sword": "Medený meč",
+    "subtitles.item.armor.equip_copper": "Cinkot medeného brnenia",
     "item.copper_additions.copper_torch": "Medená fakľa"
 }

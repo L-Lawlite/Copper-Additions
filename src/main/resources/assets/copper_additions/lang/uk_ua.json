@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Залізний ланцюг",
+    "block.minecraft.chain": "Ланцюг",
     "block.copper_additions.copper_bars": "Мідні ґрати",
     "block.copper_additions.copper_chain": "Мідний ланцюг",
     "block.copper_additions.copper_lantern": "Мідний ліхтар",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Мідне кайло",
     "item.copper_additions.copper_shovel": "Мідна лопата",
     "item.copper_additions.copper_sword": "Мідний меч",
+    "subtitles.item.armor.equip_copper": "Мідні обладунки бряжчать",
     "item.copper_additions.copper_torch": "Мідний смолоскип"
 }

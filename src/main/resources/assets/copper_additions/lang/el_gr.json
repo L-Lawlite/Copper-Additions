@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Αλυσίδα Σιδήρου",
+    "block.minecraft.chain": "Αλυσίδα",
     "block.copper_additions.copper_bars": "Κάγκελα Χαλκού",
     "block.copper_additions.copper_chain": "Αλυσίδα Χαλκού",
     "block.copper_additions.copper_lantern": "Φανάρι Χαλκού",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Χάλκινη Αξίνα",
     "item.copper_additions.copper_shovel": "Χάλκινο Φτυάρι",
     "item.copper_additions.copper_sword": "Χάλκινο Σπαθί",
+    "subtitles.item.armor.equip_copper": "Χάλκινη πανοπλία φοριέται",
     "item.copper_additions.copper_torch": "Πυρσός Χαλκού"
 }

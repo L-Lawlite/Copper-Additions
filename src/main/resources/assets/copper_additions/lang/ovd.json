@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Kopparhacka",
     "item.copper_additions.copper_shovel": "Kopparspade",
     "item.copper_additions.copper_sword": "Kopparsvärd",
+    "subtitles.item.armor.equip_copper": "Kopparrustning skramlar",
     "item.copper_additions.copper_torch": "Kopparfackla"
 }

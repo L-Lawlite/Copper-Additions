@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Iron Rackent",
+    "block.minecraft.chain": "Rackent",
     "block.copper_additions.copper_bars": "Are Rods",
     "block.copper_additions.copper_chain": "Are Rackent",
     "block.copper_additions.copper_lantern": "Are Bloakern",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Are Pike",
     "item.copper_additions.copper_shovel": "Are Shovel",
     "item.copper_additions.copper_sword": "Are Sword",
+    "subtitles.item.armor.equip_copper": "Are hirst clangs",
     "item.copper_additions.copper_torch": "Are Thackle"
 }

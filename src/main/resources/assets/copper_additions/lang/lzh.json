@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "鐵鏈",
+    "block.minecraft.chain": "鏈",
     "block.copper_additions.copper_bars": "銅檻",
     "block.copper_additions.copper_chain": "銅鏈",
     "block.copper_additions.copper_lantern": "銅燈籠",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "銅鎬",
     "item.copper_additions.copper_shovel": "銅鍁",
     "item.copper_additions.copper_sword": "銅劍",
+    "subtitles.item.armor.equip_copper": "著銅甲",
     "item.copper_additions.copper_torch": "銅炬"
 }

@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Catena di ferro",
+    "block.minecraft.chain": "Catena",
     "block.copper_additions.copper_bars": "Sbarre di rame",
     "block.copper_additions.copper_chain": "Catena di rame",
     "block.copper_additions.copper_lantern": "Lanterna di rame",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Piccone di rame",
     "item.copper_additions.copper_shovel": "Pala di rame",
     "item.copper_additions.copper_sword": "Spada di rame",
+    "subtitles.item.armor.equip_copper": "Armatura di rame sferraglia",
     "item.copper_additions.copper_torch": "Torcia di rame"
 }

@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Cjadene di fier",
+    "block.minecraft.chain": "Cjadene",
     "block.copper_additions.copper_bars": "Sbaris di ram",
     "block.copper_additions.copper_chain": "Cjadene di ram",
     "block.copper_additions.copper_lantern": "Ferâl di ram",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Picon di ram",
     "item.copper_additions.copper_shovel": "Pale di ram",
     "item.copper_additions.copper_sword": "Spade di ram",
+    "subtitles.item.armor.equip_copper": "Armadure di ram e sdrondene",
     "item.copper_additions.copper_torch": "Torce di ram"
 }

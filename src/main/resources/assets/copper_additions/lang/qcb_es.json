@@ -32,9 +32,10 @@
     "item.copper_additions.copper_hoe": "Cesoria de cobri",
     "item.copper_additions.copper_horse_armor": "Armaúra de cobri pa caballu",
     "item.copper_additions.copper_leggings": "Pantalonis de cobri",
-    "item.copper_additions.copper_nugget": "Pipita de cobri",
+    "item.copper_additions.copper_nugget": "Pibita de cobri",
     "item.copper_additions.copper_pickaxe": "Picu de cobri",
     "item.copper_additions.copper_shovel": "Tul de cobri",
     "item.copper_additions.copper_sword": "Espada de cobri",
+    "subtitles.item.armor.equip_copper": "Armaura de cobri tingla",
     "item.copper_additions.copper_torch": "Aja de cobri"
 }

@@ -1,12 +1,12 @@
 {
-    "block.minecraft.chain": "Dây xích sắt",
+    "block.minecraft.chain": "Dây xích",
     "block.copper_additions.copper_bars": "Hàng rào đồng",
     "block.copper_additions.copper_chain": "Dây xích đồng",
     "block.copper_additions.copper_lantern": "Đèn lồng đồng",
     "block.copper_additions.copper_torch": "Đuốc đồng",
     "block.copper_additions.exposed_copper_bars": "Hàng rào đồng bị phơi ra",
-    "block.copper_additions.exposed_copper_chain": "Dây xích đồng bị ẩm",
-    "block.copper_additions.exposed_copper_lantern": "Đèn lồng đồng bị ẩm",
+    "block.copper_additions.exposed_copper_chain": "Dây xích đồng bị phơi ra",
+    "block.copper_additions.exposed_copper_lantern": "Đèn lồng đồng bị phơi ra",
     "block.copper_additions.oxidized_copper_bars": "Hàng rào đồng bị oxi hoá",
     "block.copper_additions.oxidized_copper_chain": "Dây xích đồng bị oxi hoá",
     "block.copper_additions.oxidized_copper_lantern": "Đèn lồng đồng bị oxi hoá",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Cuốc chim đồng",
     "item.copper_additions.copper_shovel": "Xẻng đồng",
     "item.copper_additions.copper_sword": "Kiếm đồng",
+    "subtitles.item.armor.equip_copper": "Giáp đồng kêu loong coong",
     "item.copper_additions.copper_torch": "Đuốc đồng"
 }

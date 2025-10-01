@@ -1,11 +1,11 @@
 {
     "block.minecraft.chain": "Lanac",
-    "block.copper_additions.copper_bars": "Copper Bars",
-    "block.copper_additions.copper_chain": "Copper Chain",
-    "block.copper_additions.copper_lantern": "Copper Lantern",
-    "block.copper_additions.copper_torch": "Copper Torch",
+    "block.copper_additions.copper_bars": "Bakarne Šipke",
+    "block.copper_additions.copper_chain": "Lanac od Bakra",
+    "block.copper_additions.copper_lantern": "Fenjer od Bakra",
+    "block.copper_additions.copper_torch": "Baklja od Bakra",
     "block.copper_additions.exposed_copper_bars": "Exposed Copper Bars",
-    "block.copper_additions.exposed_copper_chain": "Exposed Copper Chain",
+    "block.copper_additions.exposed_copper_chain": "Lanac of izloženog bakra",
     "block.copper_additions.exposed_copper_lantern": "Exposed Copper Lantern",
     "block.copper_additions.oxidized_copper_bars": "Oxidized Copper Bars",
     "block.copper_additions.oxidized_copper_chain": "Oxidized Copper Chain",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Copper Pickaxe",
     "item.copper_additions.copper_shovel": "Copper Shovel",
     "item.copper_additions.copper_sword": "Copper Sword",
-    "item.copper_additions.copper_torch": "Copper Torch"
+    "subtitles.item.armor.equip_copper": "Copper armor clonks",
+    "item.copper_additions.copper_torch": "Baklja od Bakra"
 }

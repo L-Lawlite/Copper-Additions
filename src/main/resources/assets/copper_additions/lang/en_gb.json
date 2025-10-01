@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Iron Chain",
+    "block.minecraft.chain": "Chain",
     "block.copper_additions.copper_bars": "Copper Bars",
     "block.copper_additions.copper_chain": "Copper Chain",
     "block.copper_additions.copper_lantern": "Copper Lantern",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Copper Pickaxe",
     "item.copper_additions.copper_shovel": "Copper Shovel",
     "item.copper_additions.copper_sword": "Copper Sword",
+    "subtitles.item.armor.equip_copper": "Copper armour clonks",
     "item.copper_additions.copper_torch": "Copper Torch"
 }

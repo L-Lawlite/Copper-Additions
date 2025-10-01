@@ -35,5 +35,6 @@
   "block.minecraft.waxed_weathered_copper_lantern",
   "block.minecraft.waxed_oxidized_copper_bars",
   "block.minecraft.waxed_oxidized_copper_chain",
-  "block.minecraft.waxed_oxidized_copper_lantern"
+  "block.minecraft.waxed_oxidized_copper_lantern",
+  "subtitles.item.armor.equip_copper"
 ]

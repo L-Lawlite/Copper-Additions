@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Irun Shain",
+    "block.minecraft.chain": "Shain",
     "block.copper_additions.copper_bars": "Copurr Jeil Bahz",
     "block.copper_additions.copper_chain": "Copurr Shain",
     "block.copper_additions.copper_lantern": "Copurr Lanturn",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Copurr Pikakse",
     "item.copper_additions.copper_shovel": "Copurr Spoon",
     "item.copper_additions.copper_sword": "Copurr Sord",
+    "subtitles.item.armor.equip_copper": "Copurr katsuit clonkz",
     "item.copper_additions.copper_torch": "Gren burny stick"
 }

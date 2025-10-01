@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Cadena de ferro",
+    "block.minecraft.chain": "Cadena",
     "block.copper_additions.copper_bars": "Reixa de coure",
     "block.copper_additions.copper_chain": "Cadena de coure",
     "block.copper_additions.copper_lantern": "Fanal de coure",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Pic de coure",
     "item.copper_additions.copper_shovel": "Pala de coure",
     "item.copper_additions.copper_sword": "Espasa de coure",
+    "subtitles.item.armor.equip_copper": "Una armadura de coure està fent soroll",
     "item.copper_additions.copper_torch": "Torxa de coure"
 }

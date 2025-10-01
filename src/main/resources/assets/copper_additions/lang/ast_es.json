@@ -9,7 +9,7 @@
     "block.copper_additions.exposed_copper_lantern": "Exposed Copper Lantern",
     "block.copper_additions.oxidized_copper_bars": "Oxidized Copper Bars",
     "block.copper_additions.oxidized_copper_chain": "Oxidized Copper Chain",
-    "block.copper_additions.oxidized_copper_lantern": "Oxidized Copper Lantern",
+    "block.copper_additions.oxidized_copper_lantern": "Farol de Cobre Ferruñosu",
     "block.copper_additions.waxed_copper_bars": "Waxed Copper Bars",
     "block.copper_additions.waxed_copper_chain": "Waxed Copper Chain",
     "block.copper_additions.waxed_copper_lantern": "Waxed Copper Lantern",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Copper Pickaxe",
     "item.copper_additions.copper_shovel": "Copper Shovel",
     "item.copper_additions.copper_sword": "Copper Sword",
+    "subtitles.item.armor.equip_copper": "Copper armor clonks",
     "item.copper_additions.copper_torch": "Copper Torch"
 }

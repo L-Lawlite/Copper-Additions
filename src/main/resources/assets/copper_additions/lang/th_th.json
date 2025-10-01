@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "โซ่เหล็ก",
+    "block.minecraft.chain": "โซ่",
     "block.copper_additions.copper_bars": "ลูกกรงทองแดง",
     "block.copper_additions.copper_chain": "โซ่ทองแดง",
     "block.copper_additions.copper_lantern": "โคมไฟทองแดง",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "อีเต้อทองแดง",
     "item.copper_additions.copper_shovel": "พลั่วทองแดง",
     "item.copper_additions.copper_sword": "ดาบทองแดง",
+    "subtitles.item.armor.equip_copper": "เกราะทองแดงดังแคร้ง",
     "item.copper_additions.copper_torch": "คบเพลิงทองแดง"
 }

@@ -1,9 +1,9 @@
 {
-    "block.minecraft.chain": "Żelazny łańcuch",
+    "block.minecraft.chain": "Łańcuch",
     "block.copper_additions.copper_bars": "Miedziane kraty",
     "block.copper_additions.copper_chain": "Miedziany łańcuch",
     "block.copper_additions.copper_lantern": "Miedziana latarnia",
-    "block.copper_additions.copper_torch": "Miedziana pochodnia",
+    "block.copper_additions.copper_torch": "Miedziowa pochodnia",
     "block.copper_additions.exposed_copper_bars": "Zwietrzałe miedziane kraty",
     "block.copper_additions.exposed_copper_chain": "Zwietrzały miedziany łańcuch",
     "block.copper_additions.exposed_copper_lantern": "Zwietrzała miedziana latarnia",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Miedziany kilof",
     "item.copper_additions.copper_shovel": "Miedziana łopata",
     "item.copper_additions.copper_sword": "Miedziany miecz",
-    "item.copper_additions.copper_torch": "Miedziana pochodnia"
+    "subtitles.item.armor.equip_copper": "Miedziana zbroja łomocze",
+    "item.copper_additions.copper_torch": "Miedziowa pochodnia"
 }

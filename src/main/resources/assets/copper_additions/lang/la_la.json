@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Catena ferrea",
+    "block.minecraft.chain": "Catena",
     "block.copper_additions.copper_bars": "Vectes cuprei",
     "block.copper_additions.copper_chain": "Catena cuprea",
     "block.copper_additions.copper_lantern": "Lanterna cuprea",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Dolabra cuprea",
     "item.copper_additions.copper_shovel": "Pala cuprea",
     "item.copper_additions.copper_sword": "Gladius cupreus",
+    "subtitles.item.armor.equip_copper": "Tegimen cupreum crepitat",
     "item.copper_additions.copper_torch": "Fax cuprea"
 }

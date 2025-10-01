@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Cadena de hierro",
+    "block.minecraft.chain": "Cadena",
     "block.copper_additions.copper_bars": "Barrotes de cobre",
     "block.copper_additions.copper_chain": "Cadena de cobre",
     "block.copper_additions.copper_lantern": "Farol de cobre",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Pico de cobre",
     "item.copper_additions.copper_shovel": "Pala de cobre",
     "item.copper_additions.copper_sword": "Espada de cobre",
+    "subtitles.item.armor.equip_copper": "Armadura de cobre hace un ruido seco",
     "item.copper_additions.copper_torch": "Antorcha de cobre"
 }

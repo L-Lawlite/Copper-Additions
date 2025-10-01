@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "שרשרת ברזל",
+    "block.minecraft.chain": "שרשרת",
     "block.copper_additions.copper_bars": "סורגי נחושת",
     "block.copper_additions.copper_chain": "שרשרת נחושת",
     "block.copper_additions.copper_lantern": "עששית נחושת",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "מכוש נחושת",
     "item.copper_additions.copper_shovel": "את נחושת",
     "item.copper_additions.copper_sword": "חרב נחושת",
+    "subtitles.item.armor.equip_copper": "שריון נחושת גומע",
     "item.copper_additions.copper_torch": "לפיד נחושת"
 }

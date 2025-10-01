@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "uᴉɐɥƆ uoɹI",
+    "block.minecraft.chain": "uᴉɐɥƆ",
     "block.copper_additions.copper_bars": "sɹɐᗺ ɹǝddoƆ",
     "block.copper_additions.copper_chain": "uᴉɐɥƆ ɹǝddoƆ",
     "block.copper_additions.copper_lantern": "uɹǝʇuɐꞀ ɹǝddoƆ",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "ǝxɐʞɔᴉԀ ɹǝddoƆ",
     "item.copper_additions.copper_shovel": "ꞁǝʌoɥS ɹǝddoƆ",
     "item.copper_additions.copper_sword": "pɹoʍS ɹǝddoƆ",
+    "subtitles.item.armor.equip_copper": "sʞuoꞁɔ ɹnoɯɹɐ ɹǝddoƆ",
     "item.copper_additions.copper_torch": "ɥɔɹo⟘ ɹǝddoƆ"
 }

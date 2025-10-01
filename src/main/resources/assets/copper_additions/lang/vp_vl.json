@@ -25,7 +25,7 @@
     "block.copper_additions.weathered_copper_bars": "Weathered Copper Bars",
     "block.copper_additions.weathered_copper_chain": "Weathered Copper Chain",
     "block.copper_additions.weathered_copper_lantern": "Weathered Copper Lantern",
-    "item.copper_additions.copper_axe": "Copper Axe",
+    "item.copper_additions.copper_axe": "Kupkat jondu",
     "item.copper_additions.copper_boots": "Copper Boots",
     "item.copper_additions.copper_chestplate": "Copper Chestplate",
     "item.copper_additions.copper_helmet": "Copper Helmet",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Copper Pickaxe",
     "item.copper_additions.copper_shovel": "Copper Shovel",
     "item.copper_additions.copper_sword": "Copper Sword",
+    "subtitles.item.armor.equip_copper": "Copper armor clonks",
     "item.copper_additions.copper_torch": "Copper Torch"
 }

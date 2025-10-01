@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "linja pi kiwen walo",
+    "block.minecraft.chain": "linja kiwen",
     "block.copper_additions.copper_bars": "sinpin palisa pi kiwen ante",
     "block.copper_additions.copper_chain": "linja pi kiwen ante",
     "block.copper_additions.copper_lantern": "poki suno pi kiwen ante",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "ilo pakala ante",
     "item.copper_additions.copper_shovel": "ilo ma ante",
     "item.copper_additions.copper_sword": "palisa utala ante",
+    "subtitles.item.armor.equip_copper": "len ante li kalama",
     "item.copper_additions.copper_torch": "palisa suno pi kiwen ante"
 }

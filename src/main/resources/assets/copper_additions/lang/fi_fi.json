@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Rautaketju",
+    "block.minecraft.chain": "Ketju",
     "block.copper_additions.copper_bars": "Kuparikalterit",
     "block.copper_additions.copper_chain": "Kupariketju",
     "block.copper_additions.copper_lantern": "Kuparilyhty",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Kuparihakku",
     "item.copper_additions.copper_shovel": "Kuparilapio",
     "item.copper_additions.copper_sword": "Kuparimiekka",
+    "subtitles.item.armor.equip_copper": "Kuparihaarniska kolisee",
     "item.copper_additions.copper_torch": "Kuparisoihtu"
 }

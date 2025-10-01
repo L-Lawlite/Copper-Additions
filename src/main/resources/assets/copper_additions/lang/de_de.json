@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Eisenkette",
+    "block.minecraft.chain": "Kette",
     "block.copper_additions.copper_bars": "Kupfergitter",
     "block.copper_additions.copper_chain": "Kupferkette",
     "block.copper_additions.copper_lantern": "Kupferlaterne",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Kupferspitzhacke",
     "item.copper_additions.copper_shovel": "Kupferschaufel",
     "item.copper_additions.copper_sword": "Kupferschwert",
+    "subtitles.item.armor.equip_copper": "Kupferrüstung scheppert",
     "item.copper_additions.copper_torch": "Kupferfackel"
 }

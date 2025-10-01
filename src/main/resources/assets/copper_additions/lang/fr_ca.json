@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Chaîne en fer",
+    "block.minecraft.chain": "Chaîne",
     "block.copper_additions.copper_bars": "Barreaux de cuivre",
     "block.copper_additions.copper_chain": "Chaîne en cuivre",
     "block.copper_additions.copper_lantern": "Lanterne en cuivre",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Pioche en cuivre",
     "item.copper_additions.copper_shovel": "Pelle en cuivre",
     "item.copper_additions.copper_sword": "Épée en cuivre",
+    "subtitles.item.armor.equip_copper": "Tintement d'armure en cuivre",
     "item.copper_additions.copper_torch": "Torche de cuivre"
 }

@@ -1,5 +1,5 @@
 {
-    "block.minecraft.chain": "Жалезны ланцуг",
+    "block.minecraft.chain": "Ланцуг",
     "block.copper_additions.copper_bars": "Мядзяныя краты",
     "block.copper_additions.copper_chain": "Мядзяны ланцуг",
     "block.copper_additions.copper_lantern": "Мядзяны ліхтар",
@@ -36,5 +36,6 @@
     "item.copper_additions.copper_pickaxe": "Мядзяная кірка",
     "item.copper_additions.copper_shovel": "Мядзяная рыдлёўка",
     "item.copper_additions.copper_sword": "Мядзяны меч",
+    "subtitles.item.armor.equip_copper": "Мядзяная браня бразгоча",
     "item.copper_additions.copper_torch": "Мядзяны факел"
 }
