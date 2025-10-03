@@ -1,0 +1,13 @@
+{
+  "item.armor.equip_copper": {
+    "sounds": [
+      "copper_additions:item/armor/equip_copper1",
+      "copper_additions:item/armor/equip_copper2",
+      "copper_additions:item/armor/equip_copper3",
+      "copper_additions:item/armor/equip_copper4",
+      "copper_additions:item/armor/equip_copper5",
+      "copper_additions:item/armor/equip_copper6"
+    ],
+    "subtitle": "subtitles.item.armor.equip_copper"
+  }
+}

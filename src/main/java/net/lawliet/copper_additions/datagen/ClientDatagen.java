@@ -8,6 +8,7 @@ import net.lawliet.copper_additions.datagen.lootTables.LootTableGenerator;
 import net.lawliet.copper_additions.datagen.model.EquipmentRenderGenerator;
 import net.lawliet.copper_additions.datagen.model.ModelGenerator;
 import net.lawliet.copper_additions.datagen.recipes.RecipeGenerator;
+import net.lawliet.copper_additions.datagen.sounds.SoundGenerator;
 import net.lawliet.copper_additions.datagen.tags.BlockTagGenerator;
 import net.lawliet.copper_additions.datagen.tags.EntityTypeTagGenerator;
 import net.lawliet.copper_additions.datagen.tags.ItemTagGenerator;
@@ -54,6 +55,7 @@ public class ClientDatagen {
 
         event.createBlockAndItemTags(BlockTagGenerator::new, ItemTagGenerator::new);
         event.createProvider(EntityTypeTagGenerator::new);
+        event.createProvider(SoundGenerator::new);
 
 
     }

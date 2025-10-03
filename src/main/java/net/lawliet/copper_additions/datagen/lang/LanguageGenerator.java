@@ -52,5 +52,8 @@ public class LanguageGenerator extends LanguageProvider {
         this.addBlock(Blocks.WEATHERED_COPPER_CHAIN, "Weathered Copper Chain");
         this.addBlock(Blocks.WEATHERED_COPPER_LANTERN, "Weathered Copper Lantern");
         this.addBlock(() -> net.minecraft.world.level.block.Blocks.CHAIN, "Iron Chain");
+
+        this.add("subtitles.item.armor.equip_copper", "Copper armor clonks");
+        this.add("itemGroup.copper_additions","Copper Additions");
     }
 }

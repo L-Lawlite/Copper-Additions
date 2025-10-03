@@ -52,7 +52,7 @@ public class CopperAdditions {
     public static void call_init(IEventBus modEventBus) {
         Items.init();
         Blocks.init();
-        SoundEvents.init();
+        CopperAdditionSounds.init();
         CreativeModeTabs.init();
         ParticleTypes.init();
         LootModifiers.init();
