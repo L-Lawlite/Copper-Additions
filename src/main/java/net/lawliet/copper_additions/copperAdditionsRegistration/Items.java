@@ -54,6 +54,8 @@ public class Items {
     public static final DeferredItem<BlockItem> WAXED_WEATHERED_COPPER_LANTERN;
     public static final DeferredItem<BlockItem> WAXED_OXIDIZED_COPPER_LANTERN;
 
+    public static final DeferredItem<BlockItem> COPPER_CHEST;
+
     static {
         COPPER_NUGGET = CopperAdditions.ITEMS.registerSimpleItem("copper_nugget");
         COPPER_SWORD = CopperAdditions.ITEMS.registerItem("copper_sword",properties ->  new SwordItem(ToolMaterialAddition.COPPER, 3.0F, -2.4F, properties));
@@ -96,6 +98,8 @@ public class Items {
         WAXED_EXPOSED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WAXED_EXPOSED_COPPER_LANTERN);
         WAXED_WEATHERED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WAXED_WEATHERED_COPPER_LANTERN);
         WAXED_OXIDIZED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WAXED_OXIDIZED_COPPER_LANTERN);
+
+        COPPER_CHEST = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.COPPER_CHEST);
     }
 
     public static void init() {

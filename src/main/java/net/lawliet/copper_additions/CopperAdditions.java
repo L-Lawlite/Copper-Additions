@@ -6,6 +6,7 @@ import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
@@ -36,6 +37,7 @@ public class CopperAdditions {
     public static final DeferredRegister<SoundEvent> SOUND_EVENT = DeferredRegister.create(Registries.SOUND_EVENT,MODID);
     public static final DeferredRegister<MapCodec<? extends IGlobalLootModifier>> LOOT_MODIFIER_SERIALIZER = DeferredRegister.create(NeoForgeRegistries.GLOBAL_LOOT_MODIFIER_SERIALIZERS, MODID);
     public static final DeferredRegister<ParticleType<?>> PARTICLE_TYPES = DeferredRegister.create(Registries.PARTICLE_TYPE, MODID);
+    public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, MODID);
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -56,6 +58,7 @@ public class CopperAdditions {
         CreativeModeTabs.init();
         ParticleTypes.init();
         LootModifiers.init();
+        BlockEntityTypes.init();
 
         SOUND_EVENT.register(modEventBus);
         ITEMS.register(modEventBus);
@@ -63,6 +66,7 @@ public class CopperAdditions {
         CREATIVE_MODE_TABS.register(modEventBus);
         LOOT_MODIFIER_SERIALIZER.register(modEventBus);
         PARTICLE_TYPES.register(modEventBus);
+        BLOCK_ENTITY_TYPES.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

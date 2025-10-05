@@ -1,6 +1,7 @@
 package net.lawliet.copper_additions.copperAdditionsRegistration;
 
 import net.lawliet.copper_additions.CopperAdditions;
+import net.lawliet.copper_additions.blockEntities.WeatheringCopperChestBlock;
 import net.lawliet.copper_additions.blocks.weatheringBlocks.WeatheringCopperBarBlock;
 import net.lawliet.copper_additions.blocks.weatheringBlocks.WeatheringCopperChainBlock;
 import net.lawliet.copper_additions.blocks.weatheringBlocks.WeatheringCopperLanternBlock;
@@ -46,6 +47,8 @@ public class Blocks {
     public static final DeferredBlock<Block> WAXED_EXPOSED_COPPER_LANTERN;
     public static final DeferredBlock<Block> WAXED_WEATHERED_COPPER_LANTERN;
     public static final DeferredBlock<Block> WAXED_OXIDIZED_COPPER_LANTERN;
+
+    public static final DeferredBlock<Block> COPPER_CHEST;
 
 
     static {
@@ -184,6 +187,14 @@ public class Blocks {
                 copperLanternProperties()
         );
 
+        COPPER_CHEST = CopperAdditions.BLOCKS.registerBlock(
+                "copper_chest",
+                properties -> new WeatheringCopperChestBlock(
+                        WeatheringCopper.WeatherState.UNAFFECTED, CopperAdditionSounds.COPPER_CHEST_OPEN.value(), CopperAdditionSounds.COPPER_CHEST_CLOSE.value(), properties
+                ),
+                copperChestProperties().mapColor(net.minecraft.world.level.block.Blocks.COPPER_BLOCK.defaultMapColor())
+        );
+
     }
 
     private static BlockBehaviour.Properties wallVariant(Block baseBlock, BlockBehaviour.Properties properties, boolean overrideDescription){
@@ -221,6 +232,13 @@ public class Blocks {
                 .lightLevel(blockstate -> 15)
                 .noOcclusion()
                 .pushReaction(PushReaction.DESTROY);
+    }
+
+    private static BlockBehaviour.Properties copperChestProperties() {
+        return BlockBehaviour.Properties.of()
+                .strength(3.0F, 6.0F)
+                .sound(SoundType.COPPER)
+                .requiresCorrectToolForDrops();
     }
 
     public static void init() {}

@@ -19,6 +19,7 @@ public class CopperAdditionsTags {
 
         public static final TagKey<Block> INCORRECT_FOR_COPPER_TOOL = copperAdditionsTag("incorrect_for_copper_tool");
         public static final TagKey<Block> COPPER = copperAdditionsTag("copper");
+        public static final TagKey<Block> COPPER_CHEST = copperAdditionsTag("copper_chest");
     }
     
     public static class Items {

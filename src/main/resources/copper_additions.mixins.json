@@ -2,7 +2,9 @@
   "required": true,
   "package": "net.lawliet.copper_additions.mixin",
   "compatibilityLevel": "JAVA_21",
+  "mixinextras": {"minVersion": "0.5.0"},
   "mixins": [
+    "ChestBlockEntityOpenerCounterMixin",
     "MobAccessor"
   ],
   "injectors": {
