@@ -29,6 +29,8 @@ public class BlockTagGenerator extends BlockTagsProvider{
                 .add(Blocks.WAXED_EXPOSED_COPPER)
                 .add(Blocks.WAXED_WEATHERED_COPPER)
                 .add(Blocks.WAXED_OXIDIZED_COPPER);
-
+        this.tag(CopperAdditionsTags.Blocks.COPPER_CHEST)
+                .add(net.lawliet.copper_additions.copperAdditionsRegistration.Blocks.COPPER_CHEST.get())
+                ;
     }
 }

@@ -2,6 +2,7 @@ package net.lawliet.copper_additions.blockEntities;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.lawliet.copper_additions.CopperAdditions;
 import net.lawliet.copper_additions.copperAdditionsRegistration.BlockEntityTypes;
 import net.lawliet.copper_additions.datagen.tags.CopperAdditionsTags;
 import net.minecraft.core.BlockPos;
@@ -57,6 +58,7 @@ public class CopperChestBlock extends CustomChestBlock {
 
     @Override
     public boolean chestCanConnectTo(BlockState neighborState) {
+        CopperAdditions.LOGGER.info("Can connect to {} -> {}", neighborState.getBlock(), neighborState.is(CopperAdditionsTags.Blocks.COPPER_CHEST));
         return neighborState.is(CopperAdditionsTags.Blocks.COPPER_CHEST);
     }
 

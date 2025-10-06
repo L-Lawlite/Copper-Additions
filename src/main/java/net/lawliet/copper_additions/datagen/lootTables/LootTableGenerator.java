@@ -44,6 +44,8 @@ public class LootTableGenerator extends BlockLootSubProvider {
         this.dropSelf(Blocks.WAXED_WEATHERED_COPPER_LANTERN.get());
         this.dropSelf(Blocks.WAXED_OXIDIZED_COPPER_LANTERN.get());
 
+        this.add(Blocks.COPPER_CHEST.get(), this::createNameableBlockEntityTable);
+
     }
 
     @NotNull

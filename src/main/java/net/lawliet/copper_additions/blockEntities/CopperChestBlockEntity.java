@@ -9,5 +9,4 @@ public class CopperChestBlockEntity extends ChestBlockEntity {
     public CopperChestBlockEntity(BlockPos pos, BlockState state) {
         super(BlockEntityTypes.COPPER_CHEST_BLOCK_ENTITY.get(), pos, state);
     }
-
 }

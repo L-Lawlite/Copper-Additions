@@ -54,6 +54,8 @@ public class ModelGenerator extends ModelProvider {
         createCopperLantern(Blocks.WEATHERED_COPPER_LANTERN.get(), Blocks.WAXED_WEATHERED_COPPER_LANTERN.get());
         createCopperLantern(Blocks.OXIDIZED_COPPER_LANTERN.get(), Blocks.WAXED_OXIDIZED_COPPER_LANTERN.get());
 
+        blockModels.createChest(Blocks.COPPER_CHEST.get(), net.minecraft.world.level.block.Blocks.COPPER_BLOCK, ResourceLocation.withDefaultNamespace("copper"), false);
+
         blockModels.createNormalTorch(Blocks.COPPER_TORCH.get(), Blocks.COPPER_WALL_TORCH.get());
     }
 
@@ -160,10 +162,10 @@ public class ModelGenerator extends ModelProvider {
         itemModels.itemModelOutput.copy(unwaxedlanternBlock.asItem(), waxedLanternBlock.asItem());
         blockModels.blockStateOutput.accept(MultiVariantGenerator.multiVariant(unwaxedlanternBlock).with(BlockModelGenerators.createBooleanModelDispatch(BlockStateProperties.HANGING, hangingLantern, lantern)));
         blockModels.blockStateOutput.accept(MultiVariantGenerator.multiVariant(waxedLanternBlock).with(BlockModelGenerators.createBooleanModelDispatch(BlockStateProperties.HANGING, hangingLantern, lantern)));
-
     }
 
     public static TextureMapping bars(Block block) {
         return new TextureMapping().put(TextureSlotAdditions.BARS, TextureMapping.getBlockTexture(block)).put(TextureSlot.EDGE, TextureMapping.getBlockTexture(block));
     }
+
 }
