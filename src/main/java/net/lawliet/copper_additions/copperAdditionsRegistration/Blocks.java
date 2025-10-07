@@ -48,7 +48,7 @@ public class Blocks {
     public static final DeferredBlock<Block> WAXED_WEATHERED_COPPER_LANTERN;
     public static final DeferredBlock<Block> WAXED_OXIDIZED_COPPER_LANTERN;
 
-    public static final DeferredBlock<Block> COPPER_CHEST;
+//    public static final DeferredBlock<Block> COPPER_CHEST;
 
 
     static {
@@ -187,13 +187,13 @@ public class Blocks {
                 copperLanternProperties()
         );
 
-        COPPER_CHEST = CopperAdditions.BLOCKS.registerBlock(
-                "copper_chest",
-                properties -> new WeatheringCopperChestBlock(
-                        WeatheringCopper.WeatherState.UNAFFECTED, CopperAdditionSounds.COPPER_CHEST_OPEN.value(), CopperAdditionSounds.COPPER_CHEST_CLOSE.value(), properties
-                ),
-                copperChestProperties().mapColor(net.minecraft.world.level.block.Blocks.COPPER_BLOCK.defaultMapColor())
-        );
+//        COPPER_CHEST = CopperAdditions.BLOCKS.registerBlock(
+//                "copper_chest",
+//                properties -> new WeatheringCopperChestBlock(
+//                        WeatheringCopper.WeatherState.UNAFFECTED, CopperAdditionSounds.COPPER_CHEST_OPEN.value(), CopperAdditionSounds.COPPER_CHEST_CLOSE.value(), properties
+//                ),
+//                copperChestProperties().mapColor(net.minecraft.world.level.block.Blocks.COPPER_BLOCK.defaultMapColor())
+//        );
 
     }
 

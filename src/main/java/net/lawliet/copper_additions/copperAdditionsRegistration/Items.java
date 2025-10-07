@@ -54,7 +54,7 @@ public class Items {
     public static final DeferredItem<BlockItem> WAXED_WEATHERED_COPPER_LANTERN;
     public static final DeferredItem<BlockItem> WAXED_OXIDIZED_COPPER_LANTERN;
 
-    public static final DeferredItem<BlockItem> COPPER_CHEST;
+//    public static final DeferredItem<BlockItem> COPPER_CHEST;
 
     static {
         COPPER_NUGGET = CopperAdditions.ITEMS.registerSimpleItem("copper_nugget");
@@ -99,7 +99,7 @@ public class Items {
         WAXED_WEATHERED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WAXED_WEATHERED_COPPER_LANTERN);
         WAXED_OXIDIZED_COPPER_LANTERN = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.WAXED_OXIDIZED_COPPER_LANTERN);
 
-        COPPER_CHEST = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.COPPER_CHEST);
+//        COPPER_CHEST = CopperAdditions.ITEMS.registerSimpleBlockItem(Blocks.COPPER_CHEST);
     }
 
     public static void init() {
