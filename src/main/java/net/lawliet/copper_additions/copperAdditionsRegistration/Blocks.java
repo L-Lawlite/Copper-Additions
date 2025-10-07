@@ -1,7 +1,7 @@
 package net.lawliet.copper_additions.copperAdditionsRegistration;
 
 import net.lawliet.copper_additions.CopperAdditions;
-import net.lawliet.copper_additions.blockEntities.WeatheringCopperChestBlock;
+//import net.lawliet.copper_additions.blockEntities.WeatheringCopperChestBlock;
 import net.lawliet.copper_additions.blocks.weatheringBlocks.WeatheringCopperBarBlock;
 import net.lawliet.copper_additions.blocks.weatheringBlocks.WeatheringCopperChainBlock;
 import net.lawliet.copper_additions.blocks.weatheringBlocks.WeatheringCopperLanternBlock;
