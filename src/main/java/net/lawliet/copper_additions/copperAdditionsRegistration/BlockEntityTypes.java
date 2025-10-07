@@ -1,7 +1,7 @@
 package net.lawliet.copper_additions.copperAdditionsRegistration;
 
 import net.lawliet.copper_additions.CopperAdditions;
-import net.lawliet.copper_additions.blockEntities.CopperChestBlockEntity;
+//import net.lawliet.copper_additions.blockEntities.CopperChestBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
 import java.util.function.Supplier;
