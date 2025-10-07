@@ -2,12 +2,14 @@ package net.lawliet.copper_additions.blockEntities;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.lawliet.copper_additions.CopperAdditions;
 import net.lawliet.copper_additions.copperAdditionsRegistration.BlockEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.ChestBlock;
@@ -17,8 +19,10 @@ import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.ChestType;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 
+import javax.annotation.Nullable;
 import java.util.function.Supplier;
 
 public class CustomChestBlock extends ChestBlock {
@@ -73,6 +77,43 @@ public class CustomChestBlock extends ChestBlock {
 
     public boolean chestCanConnectTo(BlockState neighborState) {
         return neighborState.is(this);
+    }
+
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext blockplacecontext) {
+        ChestType chesttype = ChestType.SINGLE;
+        Direction direction = blockplacecontext.getHorizontalDirection().getOpposite();
+        FluidState fluidstate = blockplacecontext.getLevel().getFluidState(blockplacecontext.getClickedPos());
+        boolean flag = blockplacecontext.isSecondaryUseActive();
+        Direction direction1 = blockplacecontext.getClickedFace();
+        if (direction1.getAxis().isHorizontal() && flag) {
+            Direction direction2 = this.candidatePartnerFacing(blockplacecontext, direction1.getOpposite());
+            if (direction2 != null && direction2.getAxis() != direction1.getAxis()) {
+                direction = direction2;
+                chesttype = direction2.getCounterClockWise() == direction1.getOpposite() ? ChestType.RIGHT : ChestType.LEFT;
+            }
+        }
+
+        if (chesttype == ChestType.SINGLE && !flag) {
+            chesttype = this.getChestType(blockplacecontext, direction);
+        }
+        return this.defaultBlockState().setValue(FACING, direction).setValue(TYPE, chesttype).setValue(WATERLOGGED, fluidstate.getType() == Fluids.WATER);
+
+    }
+
+    @Nullable
+    private Direction candidatePartnerFacing(BlockPlaceContext context, Direction direction) {
+        CopperAdditions.LOGGER.info("Private method running");
+        BlockState blockstate = context.getLevel().getBlockState(context.getClickedPos().relative(direction));
+        return this.chestCanConnectTo(blockstate) && blockstate.getValue(TYPE) == ChestType.SINGLE ? blockstate.getValue(FACING) : null;
+    }
+
+    protected ChestType getChestType(BlockPlaceContext context, Direction direction) {
+        if (direction == this.candidatePartnerFacing(context, direction.getClockWise())) {
+            return ChestType.LEFT;
+        } else {
+            return direction == this.candidatePartnerFacing(context, direction.getCounterClockWise()) ? ChestType.RIGHT : ChestType.SINGLE;
+        }
     }
 
     @Override
